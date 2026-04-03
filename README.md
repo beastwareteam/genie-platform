@@ -22,5 +22,11 @@ python -m genie.main
 - `src/genie/runtime`: Tools, Tasks, Hooks, EventBus, FeatureFlags
 - `src/genie/shared`: Config, Logging, Errors, Typing
 
+## Arbeitsmodell
+- Team-Arbeitsweise: `WORKING_MODEL.md`
+- Engineering-Checkliste: `docs/ENGINEERING_CHECKLIST.md`
+- Architekturentscheidungen: `docs/adr/`
+- PR-Gates: `.github/PULL_REQUEST_TEMPLATE.md`
+
 ## Namensneutralisierung
 Legacy-/Fremdbezeichnungen wurden nicht übernommen. Der zentrale Agent-Name ist `Genie`.
