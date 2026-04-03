@@ -20,6 +20,15 @@ python -m genie.main --server --host 127.0.0.1 --port 8765
 - Health: `GET /health`
 - Prompt: `POST /prompt` mit JSON `{ "prompt": "..." }`
 
+## Architektur-Check (One Command)
+```bash
+python -m genie.dev.architecture_check
+```
+Nach `pip install -e .[dev]` alternativ:
+```bash
+genie-architecture-check
+```
+
 ## Struktur
 - `src/genie/app`: Bootstrap, DI-Container, Lifecycle
 - `src/genie/presentation`: PySide6 Views + ViewModels
