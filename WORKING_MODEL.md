@@ -8,7 +8,7 @@ Eigenständige Produktentwicklung mit professioneller OOP-Struktur, ohne Namens-
 2. Jede neue Funktion startet mit einem Use-Case in `application/use_cases`.
 3. UI (`presentation`) darf keine Infrastruktur direkt aufrufen.
 4. Externe Impulse aus der Watchlist sind nur Pattern-Inspiration, keine 1:1-Übernahme.
-5. Jede PR muss die Neutralisierungs- und Layer-Checks bestehen.
+5. Architekturregeln aus `docs/architecture/TARGET_ARCHITECTURE.md` sind verbindlich.
 
 ## Sprint-Rhythmus
 - Woche 1: Kernfunktion (Use-Case + Domain + Tests)
@@ -19,4 +19,4 @@ Eigenständige Produktentwicklung mit professioneller OOP-Struktur, ohne Namens-
 - Unit-Tests für neue Domain-/Application-Logik
 - Keine Layer-Verletzung
 - Keine Legacy-/Fremdnamen in neuen Dateien
-- ADR-Referenz in PR hinterlegt
+- ADR aktualisiert, wenn sich Architektur oder Schnittstellen verändern

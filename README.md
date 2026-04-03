@@ -26,7 +26,11 @@ python -m genie.main
 - Team-Arbeitsweise: `WORKING_MODEL.md`
 - Engineering-Checkliste: `docs/ENGINEERING_CHECKLIST.md`
 - Architekturentscheidungen: `docs/adr/`
-- PR-Gates: `.github/PULL_REQUEST_TEMPLATE.md`
+
+## Architektur-Fokus (aktuelle Priorität)
+- Zielarchitektur: `docs/architecture/TARGET_ARCHITECTURE.md`
+- Struktur-Blueprint: `docs/architecture/STRUCTURE_BLUEPRINT.md`
+- Migrationsphasen: `docs/architecture/MIGRATION_PHASES.md`
 
 ## Namensneutralisierung
 Legacy-/Fremdbezeichnungen wurden nicht übernommen. Der zentrale Agent-Name ist `Genie`.
