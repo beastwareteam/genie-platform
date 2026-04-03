@@ -12,10 +12,19 @@ Dieses Projekt ist ein neuer, neutralisierter PySide6-Startpunkt mit vollständi
 pip install -e .[dev]
 python -m genie.main
 ```
+Alternativ nach Installation:
+```bash
+genie
+```
+Hinweis: Die `genie`- und `genie-architecture-check`-Commands benötigen kein `PYTHONPATH`.
 
 ## Server-Mode (lokal)
 ```bash
 python -m genie.main --server --host 127.0.0.1 --port 8765
+```
+Alternativ nach Installation:
+```bash
+genie --server --host 127.0.0.1 --port 8765
 ```
 - Health: `GET /health`
 - Prompt: `POST /prompt` mit JSON `{ "prompt": "..." }`

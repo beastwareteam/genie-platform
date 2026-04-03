@@ -3,6 +3,7 @@ from __future__ import annotations
 import subprocess
 import sys
 from pathlib import Path
+import os
 
 
 def main() -> int:
@@ -15,7 +16,9 @@ def main() -> int:
         "tests/contract",
         "tests/unit/test_registries.py",
     ]
-    result = subprocess.run(command, cwd=repo_root)
+    env = os.environ.copy()
+    env["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
+    result = subprocess.run(command, cwd=repo_root, env=env)
     return result.returncode
 
 

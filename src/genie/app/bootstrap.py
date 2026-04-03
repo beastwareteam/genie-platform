@@ -1,9 +1,10 @@
 from genie.app.container import ApplicationContainer
-from genie.app.lifecycle import ApplicationController
 from genie.infrastructure.server import LocalHttpServer, LocalServerEdge
 
 
-def bootstrap_application() -> ApplicationController:
+def bootstrap_application() -> "ApplicationController":
+    from genie.app.lifecycle import ApplicationController
+
     container = ApplicationContainer.build_default()
     return ApplicationController(container=container)
 
