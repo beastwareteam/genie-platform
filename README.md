@@ -13,6 +13,13 @@ pip install -e .[dev]
 python -m genie.main
 ```
 
+## Server-Mode (lokal)
+```bash
+python -m genie.main --server --host 127.0.0.1 --port 8765
+```
+- Health: `GET /health`
+- Prompt: `POST /prompt` mit JSON `{ "prompt": "..." }`
+
 ## Struktur
 - `src/genie/app`: Bootstrap, DI-Container, Lifecycle
 - `src/genie/presentation`: PySide6 Views + ViewModels
