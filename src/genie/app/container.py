@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+from genie.application.facade import ApplicationFacade
 from genie.application.query_engine.query_engine import QueryEngine
 from genie.application.task_orchestrator.task_orchestrator import TaskOrchestrator
 from genie.presentation.viewmodels.main_view_model import MainViewModel
@@ -12,7 +13,7 @@ from genie.shared.logging.logger import get_logger
 
 
 @dataclass(frozen=True)
-class ApplicationContainer:
+class CoreContainer:
     settings: AppSettings
     logger_name: str
     feature_flags: FeatureFlags
@@ -21,10 +22,25 @@ class ApplicationContainer:
     task_registry: TaskRegistry
     query_engine: QueryEngine
     task_orchestrator: TaskOrchestrator
+    application_facade: ApplicationFacade
+
+
+@dataclass(frozen=True)
+class EdgeContainer:
     main_view_model: MainViewModel
 
+
+@dataclass(frozen=True)
+class ApplicationContainer:
+    core: CoreContainer
+    edge: EdgeContainer
+
+    @property
+    def main_view_model(self) -> MainViewModel:
+        return self.edge.main_view_model
+
     @staticmethod
-    def build_default() -> "ApplicationContainer":
+    def build_core() -> CoreContainer:
         settings = AppSettings.default()
         logger = get_logger("genie")
         feature_flags = FeatureFlags.from_settings(settings)
@@ -33,13 +49,12 @@ class ApplicationContainer:
         task_registry = TaskRegistry()
         query_engine = QueryEngine(tool_registry=tool_registry, feature_flags=feature_flags)
         task_orchestrator = TaskOrchestrator(task_registry=task_registry)
-        main_view_model = MainViewModel(
+        application_facade = ApplicationFacade(
             query_engine=query_engine,
             task_orchestrator=task_orchestrator,
-            event_bus=event_bus,
-            feature_flags=feature_flags,
+            settings=settings,
         )
-        return ApplicationContainer(
+        return CoreContainer(
             settings=settings,
             logger_name=logger.name,
             feature_flags=feature_flags,
@@ -48,5 +63,22 @@ class ApplicationContainer:
             task_registry=task_registry,
             query_engine=query_engine,
             task_orchestrator=task_orchestrator,
-            main_view_model=main_view_model,
+            application_facade=application_facade,
         )
+
+    @staticmethod
+    def build_edge(core: CoreContainer) -> EdgeContainer:
+        main_view_model = MainViewModel(
+            chat_service=core.application_facade,
+            task_service=core.application_facade,
+            session_service=core.application_facade,
+            event_bus=core.event_bus,
+            feature_flags=core.feature_flags,
+        )
+        return EdgeContainer(main_view_model=main_view_model)
+
+    @staticmethod
+    def build_default() -> "ApplicationContainer":
+        core = ApplicationContainer.build_core()
+        edge = ApplicationContainer.build_edge(core)
+        return ApplicationContainer(core=core, edge=edge)
