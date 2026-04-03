@@ -38,6 +38,15 @@ Nach `pip install -e .[dev]` alternativ:
 genie-architecture-check
 ```
 
+## Doctor (Environment + Boundary Checks)
+```bash
+genie --doctor
+```
+Alternativ:
+```bash
+genie-doctor
+```
+
 ## Struktur
 - `src/genie/app`: Bootstrap, DI-Container, Lifecycle
 - `src/genie/presentation`: PySide6 Views + ViewModels

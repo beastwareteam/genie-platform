@@ -9,7 +9,9 @@ dependencies = [
 ]
 
 [project.scripts]
+genie = "genie.main:main"
 genie-architecture-check = "genie.dev.architecture_check:main"
+genie-doctor = "genie.dev.doctor:main"
 
 [project.optional-dependencies]
 dev = [

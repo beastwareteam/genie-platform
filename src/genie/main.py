@@ -1,6 +1,7 @@
 import argparse
 
 from genie.app.bootstrap import bootstrap_application, bootstrap_http_server
+from genie.dev import doctor
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -21,11 +22,19 @@ def build_parser() -> argparse.ArgumentParser:
         default=8765,
         help="Port für den HTTP-Server (nur mit --server relevant).",
     )
+    parser.add_argument(
+        "--doctor",
+        action="store_true",
+        help="Führt einen lokalen Environment- und Architektur-Check aus.",
+    )
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
+    if args.doctor:
+        raise SystemExit(doctor.main())
+
     if args.server:
         http_server = bootstrap_http_server(host=args.host, port=args.port)
         print(f"Genie HTTP Server läuft auf {http_server.address}")
