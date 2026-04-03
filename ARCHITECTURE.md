@@ -33,7 +33,25 @@ graph TD
 ```
 
 ## Layer-Vertrag
-1. `presentation` kennt nur `application` und `runtime/event_bus`
-2. `application` kennt `domain` Ports + `runtime` Registries
-3. `infrastructure` implementiert `domain` Ports
-4. `shared` ist nur Utility/Config, ohne Business-Logik
+1. `presentation` kennt nur `application/interfaces` und `runtime/event_bus` (Interface-First)
+2. `application/interfaces` định hiểu reine Protocols (keine Implementierung)
+3. `application/facade` implementiert Interfaces und orchestriert QueryEngine + TaskOrchestrator
+4. `application` kennt `domain` Ports + `runtime` Registries (aber Domain ist READ-ONLY / Frozen)
+5. `infrastructure` implementiert `domain` Ports und ist agnostisch gegenüber Presentation
+6. `shared` ist nur Utility/Config, ohne Business-Logik
+
+## Interface-First Architektur (NEU)
+
+**Zwei klare Schnitte:**
+- **Schnitt 1:** Presentation/Edge ↔ `application/interfaces/*` (Service-Fassade)
+- **Schnitt 2:** Orchestration ↔ Domain (Domain bleibt READ-ONLY/Frozen)
+
+**Neue Schichten:**
+- `application/interfaces/` — abstrakte Service-Contracts (ChatService, TaskService, SessionService)
+- `application/facade/` — konkrete Service-Implementierung und Orchestration-Zentrum
+- `infrastructure/server/` — Server-Edge als alternativer Adapter gegen Facade-Interfaces
+
+**Domain-Freeze aktiv:**
+- Domain-Logik, Entities, Policies werden nicht erweitert
+- Nur lesender Zugriff gestattet
+- Freeze läuft bis Interface-Contract 2 Sprints grün läuft

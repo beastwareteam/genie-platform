@@ -27,6 +27,8 @@ Eine vollständig objektorientierte Desktop-Architektur mit PySide6, bei der Fac
 - Ports-and-Adapters: Infrastruktur nur über Interfaces/Protocols.
 - Use-Case First: neue Features beginnen in Application Use-Cases.
 - Framework Isolation: Domain bleibt vollständig framework-unabhängig.
+- **Interface-First (NEU):** Alle Konsumenten (Presentation/Server-Edge) nutzen nur `application/interfaces`
+- **Domain-Freeze (NEU):** Domain-Logik ist während Interface-Aufbau frozen (read-only, kein Ausbau)
 
 ## 4) Kern-Module (Ziel)
 - app: Bootstrap, Container, Lifecycle
