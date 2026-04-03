@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import platform
 import shutil
 import subprocess
@@ -58,10 +59,22 @@ def _check_architecture_guards() -> tuple[bool, str]:
     return False, f"Architecture-Check ExitCode={exit_code}"
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Genie Doctor")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Behandelt optionale Checks (z. B. PySide6 Import) als verpflichtend.",
+    )
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
     print("Genie Doctor")
     print(f"Platform: {platform.system()} {platform.release()}")
 
+    pyside_required = args.strict
     checks: list[tuple[str, Callable[[], tuple[bool, str]], bool]] = [
         ("Python >= 3.11", _check_python_version, True),
         ("Package Version", _check_package_version, True),
@@ -71,7 +84,7 @@ def main() -> int:
             lambda: _check_cli_script("genie-architecture-check"),
             True,
         ),
-        ("PySide6 Import", _check_pyside6_import, False),
+        ("PySide6 Import", _check_pyside6_import, pyside_required),
         ("Architecture Guards", _check_architecture_guards, True),
     ]
 

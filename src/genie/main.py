@@ -27,13 +27,19 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Führt einen lokalen Environment- und Architektur-Check aus.",
     )
+    parser.add_argument(
+        "--doctor-strict",
+        action="store_true",
+        help="Wie --doctor, aber mit strict Modus für optionale Checks.",
+    )
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
-    if args.doctor:
-        raise SystemExit(doctor.main())
+    if args.doctor or args.doctor_strict:
+        doctor_args = ["--strict"] if args.doctor_strict else []
+        raise SystemExit(doctor.main(doctor_args))
 
     if args.server:
         http_server = bootstrap_http_server(host=args.host, port=args.port)

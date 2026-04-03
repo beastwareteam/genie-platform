@@ -46,6 +46,11 @@ Alternativ:
 ```bash
 genie-doctor
 ```
+Strict-Modus (optionale Checks werden zu Pflichtchecks):
+```bash
+genie --doctor-strict
+genie-doctor --strict
+```
 
 ## Struktur
 - `src/genie/app`: Bootstrap, DI-Container, Lifecycle
