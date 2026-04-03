@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from genie.application.facade import ApplicationFacade
 from genie.application.query_engine.query_engine import QueryEngine
 from genie.application.task_orchestrator.task_orchestrator import TaskOrchestrator
+from genie.infrastructure.server import LocalServerEdge
 from genie.presentation.viewmodels.main_view_model import MainViewModel
 from genie.runtime.event_bus.event_bus import EventBus
 from genie.runtime.feature_flags.feature_flags import FeatureFlags
@@ -28,6 +29,7 @@ class CoreContainer:
 @dataclass(frozen=True)
 class EdgeContainer:
     main_view_model: MainViewModel
+    server_edge: LocalServerEdge
 
 
 @dataclass(frozen=True)
@@ -75,7 +77,12 @@ class ApplicationContainer:
             event_bus=core.event_bus,
             feature_flags=core.feature_flags,
         )
-        return EdgeContainer(main_view_model=main_view_model)
+        server_edge = LocalServerEdge(
+            chat_service=core.application_facade,
+            task_service=core.application_facade,
+            session_service=core.application_facade,
+        )
+        return EdgeContainer(main_view_model=main_view_model, server_edge=server_edge)
 
     @staticmethod
     def build_default() -> "ApplicationContainer":
