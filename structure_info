@@ -1,0 +1,928 @@
+
+> Wie ein Universalstecker: Stecker, jede Steckdose der Welt.
+
+---
+
+## 1. ARCHITEKTUR-ÜBERSICHT
+
+```
+┌────────────────────────────────────────────────────────────────────────────┐
+│                         ADAPTIVE API FABRIC                                │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  EINGANG                VERARBEITUNG               AUSGANG                 │
+│  ───────                ────────────               ───────                 │
+│                                                                            │
+│  Nutzer-Intent    →   SchemaDetector         →   AnbieterAdapter          │
+│  "Bestellung"         (erkennt Struktur)         (konfiguriert sich)      │
+│  "Support-Mail"                                                            │
+│  "Kontaktform"        DataFabricEngine       →   SecureTransport          │
+│                       (normalisiert)              (XSS/CSRF/Injection      │
+│  Externe URL    →     PatternLearner              sicher)                 │
+│  Formular-HTML        (lernt Muster)                                       │
+│  API-Endpoint         EdgeCaseMatrix         →   ResponseParser           │
+│                       (bekannte Fälle)            (normalisiert zurück)    │
+│                                                                            │
+│                        GenomeManager                                       │
+│                       (Gene für jeden               FeedbackLoop          │
+│                        Anbieter-Typ)               (Fitness steigt)       │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 2. DIE FÜNF SCHICHTEN DER FABRIC
+
+### Schicht 1 — SchemaDetector (Erkennung)
+
+Analysiert eine externe URL/Formular/API automatisch und erkennt die Struktur:
+
+```python
+class SchemaDetector:
+    """
+    Gibt eine URL rein → bekommt ein normalisiertes Schema raus.
+    Keine manuelle Konfiguration nötig.
+    """
+    
+    async def detect(self, source: DetectionSource) -> DetectedSchema:
+        results = await asyncio.gather(
+            self._detect_html_form(source),      # Formular-Felder aus HTML
+            self._detect_openapi(source),         # OpenAPI/Swagger Spec
+            self._detect_graphql(source),         # GraphQL Introspection
+            self._detect_rest_patterns(source),   # REST Heuristiken
+            self._detect_from_gene_cache(source), # Bekanntes Muster?
+        )
+        return self._merge_detections(results)
+
+@dataclass
+class DetectedSchema:
+    source_url: str
+    schema_type: SchemaType          # FORM, REST, GRAPHQL, EMAIL, SOAP
+    fields: list[FieldDefinition]    # Erkannte Felder mit Typ/Validierung
+    endpoints: list[EndpointDef]     # Erkannte Endpunkte
+    auth_method: AuthMethod          # NONE, APIKEY, BEARER, OAUTH, CSRF
+    security_requirements: list[str] # CORS, CSRF-Token, etc.
+    confidence: float                # 0.0 - 1.0
+    gene_id: str | None              # Falls Muster bekannt → Gene laden
+
+@dataclass  
+class FieldDefinition:
+    name: str
+    field_type: FieldType            # TEXT, EMAIL, NUMBER, SELECT, FILE, HIDDEN
+    required: bool
+    validation_pattern: str | None   # Regex aus HTML `pattern` Attribut
+    label: str                       # Aus Label-Tag extrahiert
+    placeholder: str
+    options: list[str]               # Für SELECT-Felder
+    security_class: SecurityClass    # SAFE, SANITIZE, ENCODE, REJECT
+```
+
+**Erkennungs-Strategien:**
+
+```python
+class HTMLFormDetector:
+    """Lädt HTML, parst alle <form> Elemente."""
+    
+    async def detect(self, url: str) -> FormSchema:
+        html = await self._safe_fetch(url)
+        # CSP-Prüfung des empfangenen HTML
+        csp_result = self._content_policy.validate_content(html)
+        if not csp_result.safe:
+            raise SecurityViolation(csp_result.violations)
+        
+        soup = self._parse(html)
+        forms = soup.find_all("form")
+        return [self._extract_form_schema(f) for f in forms]
+
+class OpenAPIDetector:
+    """Versucht /openapi.json, /swagger.json, /api-docs."""
+    
+    COMMON_PATHS = ["/openapi.json", "/swagger.json", "/api-docs", 
+                    "/v1/openapi.json", "/.well-known/openapi.json"]
+    
+    async def detect(self, base_url: str) -> OpenAPISchema | None:
+        for path in self.COMMON_PATHS:
+            schema = await self._try_fetch_json(base_url + path)
+            if schema and "openapi" in schema:
+                return self._parse_openapi(schema)
+        return None
+
+class PatternLearner:
+    """Lernt Muster aus vergangenen erfolgreichen Integrationen."""
+    
+    def recognize(self, url: str) -> GeneId | None:
+        # URL-Hash → bekanntes Gene?
+        domain = self._extract_domain(url)
+        return self._pattern_store.lookup_by_domain(domain)
+```
+
+---
+
+### Schicht 2 — DataFabricEngine (Normalisierung)
+
+Transformiert **jede externe Datenstruktur** in das interne Format — und zurück:
+
+```python
+class DataFabricEngine:
+    """
+    Bidirektionaler Übersetzer:
+    Extern (chaos) ↔ Intern (normalisiert) ↔ Extern (anbieter-spezifisch)
+    """
+    
+    def normalize_inbound(
+        self, 
+        raw_data: dict,
+        schema: DetectedSchema,
+        security_context: SecurityContext,
+    ) -> NormalizedPayload:
+        """Externe Daten → sicheres internes Format."""
+        
+        result = {}
+        for field in schema.fields:
+            raw_value = raw_data.get(field.name)
+            
+            # Sicherheits-Pipeline (unveränderlich, immer)
+            secured = self._security_pipeline.process(
+                value=raw_value,
+                field=field,
+                context=security_context,
+            )
+            
+            result[field.name] = NormalizedField(
+                original_name=field.name,
+                value=secured.value,
+                field_type=field.field_type,
+                validation_passed=secured.valid,
+                security_class=field.security_class,
+            )
+        
+        return NormalizedPayload(fields=result, schema_id=schema.gene_id)
+    
+    def serialize_outbound(
+        self,
+        payload: NormalizedPayload,
+        target_schema: DetectedSchema,
+        adapter: "AnbieterAdapter",
+    ) -> dict:
+        """Internes Format → anbieter-spezifisches Format."""
+        return adapter.serialize(payload, target_schema)
+
+@dataclass
+class NormalizedField:
+    original_name: str
+    value: Any                       # Bereinigter, validierter Wert
+    field_type: FieldType
+    validation_passed: bool
+    security_class: SecurityClass
+    
+@dataclass  
+class NormalizedPayload:
+    fields: dict[str, NormalizedField]
+    schema_id: str | None
+    created_at: datetime
+    correlation_id: str              # Für Tracing
+```
+
+---
+
+### Schicht 3 — SecurityPipeline (Schutz, unveränderlich)
+
+**Jedes** Datum durchläuft diese Pipeline — keine Ausnahmen:
+
+```python
+class SecurityPipeline:
+    """
+    Mehrschichtige Sicherheitsprüfung.
+    Reihenfolge ist kritisch — nicht verändern.
+    
+    Basiert auf vorhandenen Modulen:
+    - ContentPolicy (13 CSP-Violation-Typen)
+    - InjectionPatterns (8 Injection-Typen, 50+ Patterns)
+    - InputValidator (Email, URL, Phone, IPv4, UUID)
+    - ResponseValidator (LLM-Output Validierung)
+    """
+    
+    PIPELINE_STAGES = [
+        Stage.LENGTH_CHECK,          # Max-Länge prüfen
+        Stage.ENCODING_NORMALIZE,    # Unicode normalisieren (NFKC)
+        Stage.UNICODE_ATTACK_DETECT, # Zero-width, RTL-Override
+        Stage.INJECTION_SCAN,        # SQL, XSS, Command, Path, Template
+        Stage.CSP_VALIDATE,          # Content Security Policy
+        Stage.TYPE_COERCE,           # Zu erwartetem Typ konvertieren
+        Stage.FIELD_VALIDATE,        # Feldspezifische Regeln (email, url)
+        Stage.ENCODE_FOR_OUTPUT,     # HTML-Escape für sicheren Output
+    ]
+    
+    def process(
+        self, 
+        value: Any, 
+        field: FieldDefinition,
+        context: SecurityContext,
+    ) -> SecurityResult:
+        
+        result = SecurityResult(value=value)
+        
+        for stage in self.PIPELINE_STAGES:
+            result = self._run_stage(stage, result, field, context)
+            if result.rejected:
+                # Kein weiterer Schritt — sofort stoppen
+                self._event_bus.publish("security.field_rejected", {
+                    "field": field.name,
+                    "stage": stage.name,
+                    "reason": result.rejection_reason,
+                    "correlation_id": context.correlation_id,
+                })
+                return result
+        
+        return result
+
+class SecurityResult:
+    value: Any
+    rejected: bool = False
+    rejection_reason: str | None = None
+    warnings: list[str] = field(default_factory=list)
+    transformations_applied: list[str] = field(default_factory=list)
+
+# Was blockiert wird (aus InjectionPatterns):
+# XSS:      <script>, javascript:, onclick=, onerror=, data:text/html
+# SQL:      ' OR 1=1, UNION SELECT, char(), hex()
+# Command:  rm -rf, | cat, $(cmd), backticks
+# Path:     ../../../etc/passwd, %2e%2e%2f
+# Template: {{code}}, {%exec%}, __import__
+# Unicode:  \u200b (zero-width), \u202e (RTL override)
+# Prompt:   "ignore previous instructions", "SYSTEM:", jailbreak patterns
+```
+
+---
+
+### Schicht 4 — AnbieterAdapter (Modular, selbstkonfigurierend)
+
+**Ein Adapter pro Anbieter-Typ** — nicht pro Anbieter. Der Adapter konfiguriert sich:
+
+```python
+class AnbieterAdapter(Protocol):
+    """Interface das alle Adapter implementieren."""
+    
+    def configure(self, schema: DetectedSchema) -> None: ...
+    def serialize(self, payload: NormalizedPayload, schema: DetectedSchema) -> dict: ...
+    async def send(self, payload: dict, endpoint: EndpointDef) -> AdapterResponse: ...
+    def parse_response(self, raw: dict) -> NormalizedResponse: ...
+
+# ─── KONKRETE ADAPTER ──────────────────────────────────────────────────────
+
+class HTMLFormAdapter:
+    """
+    Für klassische Web-Formulare (Kontakt, Bestellung, Support).
+    Erkennt automatisch: multipart/form-data vs application/x-www-form-urlencoded
+    Fügt CSRF-Token automatisch ein wenn erkannt.
+    """
+    
+    def configure(self, schema: DetectedSchema) -> None:
+        self._encoding = self._detect_encoding(schema)
+        self._csrf_field = self._find_csrf_field(schema)
+        self._honeypot_fields = self._find_honeypot_fields(schema)
+    
+    def serialize(self, payload: NormalizedPayload, schema: DetectedSchema) -> dict:
+        result = {}
+        for field_name, field in payload.fields.items():
+            if field.validation_passed:
+                result[field.original_name] = field.value
+        
+        # CSRF automatisch
+        if self._csrf_field:
+            result[self._csrf_field.name] = self._csrf_token
+        
+        # Honeypot-Felder leer lassen (Anti-Bot)
+        for hp in self._honeypot_fields:
+            result[hp.name] = ""
+        
+        return result
+
+class RESTAdapter:
+    """
+    Für REST APIs (JSON).
+    Konfiguriert sich aus OpenAPI-Schema.
+    Unterstützt: Bearer, ApiKey, OAuth2, Basic Auth.
+    """
+    
+    def configure(self, schema: DetectedSchema) -> None:
+        self._auth = AuthHandlerFactory.create(schema.auth_method)
+        self._base_url = schema.source_url
+        self._endpoints = {ep.operation_id: ep for ep in schema.endpoints}
+    
+    async def send(self, payload: dict, endpoint: EndpointDef) -> AdapterResponse:
+        headers = {
+            "Content-Type": "application/json",
+            "X-Correlation-Id": payload.get("_correlation_id", ""),
+        }
+        self._auth.inject_headers(headers)
+        
+        # Rate-Limiting (aus RateLimiter der ResearchEngine übernehmen)
+        await self._rate_limiter.wait()
+        
+        response = await self._http.post(
+            url=self._base_url + endpoint.path,
+            json=payload,
+            headers=headers,
+            timeout=30,
+        )
+        return self._parse_response(response)
+
+class EmailFormAdapter:
+    """
+    Für E-Mail-basierte Kontaktformulare (mailto:, SMTP, Webmailer).
+    Erkennt automatisch ob mailto: oder AJAX-POST.
+    """
+    
+    def configure(self, schema: DetectedSchema) -> None:
+        action = schema.form_action
+        if action.startswith("mailto:"):
+            self._mode = EmailMode.MAILTO
+        else:
+            self._mode = EmailMode.HTTP_POST
+    
+    def serialize(self, payload: NormalizedPayload, schema: DetectedSchema) -> dict:
+        # Felder zu E-Mail-Körper zusammensetzen
+        email_body = self._template.render(payload.fields)
+        # WICHTIG: HTML-Escape für E-Mail-Output
+        return {"body": html.escape(email_body), "subject": payload.fields.get("subject")}
+
+class GraphQLAdapter:
+    """Für GraphQL-Endpunkte. Baut Query/Mutation automatisch aus Schema."""
+    
+    def configure(self, schema: DetectedSchema) -> None:
+        self._schema = schema
+        self._mutations = {m.name: m for m in schema.mutations}
+    
+    def build_mutation(self, operation: str, variables: dict) -> str:
+        mutation = self._mutations[operation]
+        return f"""
+            mutation {mutation.name}($input: {mutation.input_type}!) {{
+                {mutation.name}(input: $input) {{
+                    {' '.join(mutation.return_fields)}
+                }}
+            }}
+        """
+```
+
+---
+
+### Schicht 5 — AdaptiveLearning (Selbsterweiterung)
+
+Das System lernt aus jeder erfolgreichen Interaktion:
+
+```python
+class AdaptiveLearningEngine:
+    """
+    Jede erfolgreiche API-Interaktion → neues/verbessertes Gene.
+    Jeder Fehler → Edge Case Eintrag.
+    Nach N Interaktionen → Muster werden automatisch generalisiert.
+    """
+    
+    def record_success(
+        self,
+        source: DetectionSource,
+        schema: DetectedSchema,
+        adapter: AnbieterAdapter,
+        response: AdapterResponse,
+    ) -> None:
+        # Gen erzeugen oder bestehenes verbessern
+        existing_gene = self._genome.gene_index.lookup_by_domain(source.domain)
+        
+        if existing_gene.is_hit:
+            # Fitness erhöhen
+            self._genome.improve(existing_gene.gene.id, feedback=+0.8)
+        else:
+            # Neues Gene aus erfolgreicher Interaktion erzeugen
+            gene = self._assemble_from_interaction(source, schema, adapter)
+            self._genome.gene_index.add(gene)
+        
+        # Pattern in EdgeCaseMatrix speichern
+        self._edge_case_matrix.record(
+            key=(schema.schema_type, frozenset(schema.security_requirements)),
+            pattern=adapter.get_config_snapshot(),
+        )
+    
+    def record_failure(
+        self,
+        source: DetectionSource,
+        error: AdapterError,
+        context: dict,
+    ) -> None:
+        # Fehler als Edge Case speichern
+        self._edge_case_matrix.record_failure(
+            domain=source.domain,
+            error_type=error.type,
+            context=context,
+        )
+        
+        # LLM um Lösung bitten
+        fix = self._query_engine.run_turn(
+            FIX_PROMPT.format(
+                error=error.message,
+                schema=context.get("schema"),
+                attempted=context.get("payload"),
+            )
+        )
+        
+        # Lösung als neues Gen speichern
+        self._genome.create_fix_gene(source.domain, fix.output)
+    
+    def generalize_patterns(self) -> None:
+        """
+        Läuft periodisch (z.B. alle 100 Interaktionen).
+        Findet gemeinsame Muster über viele Domains.
+        Erstellt generalisierte Gene (z.B. "kontaktformular-standard").
+        """
+        clusters = self._pattern_clusterer.cluster(
+            self._interaction_log.recent(limit=100)
+        )
+        for cluster in clusters:
+            if cluster.size >= 5:  # Mindestens 5 ähnliche Fälle
+                generalized_gene = self._generalize(cluster)
+                self._genome.gene_index.add(generalized_gene)
+```
+
+---
+
+## 3. FORMULAR-GENE BIBLIOTHEK (Vorbefüllt)
+
+Die Bibliothek startet mit einer umfangreichen Sammlung bekannter Muster:
+
+```
+KATEGORIE: kontakt
+├── kontaktformular-standard      (Name, E-Mail, Nachricht, CSRF)
+├── kontaktformular-erweitert     (+ Telefon, Betreff, Anhang)
+├── kontaktformular-support       (+ Ticket-Nummer, Priorität, Kategorie)
+└── kontaktformular-callback      (+ Rückrufzeit, Telefon)
+
+KATEGORIE: bestellung  
+├── bestellung-produkt-einfach    (Produkt, Menge, Adresse, Zahlung)
+├── bestellung-produkt-komplex    (+ Varianten, Optionen, Rabattcode)
+├── bestellung-dienstleistung     (Datum, Uhrzeit, Beschreibung, Preis)
+└── bestellung-abo                (Laufzeit, Zahlung, Kündigung)
+
+KATEGORIE: support
+├── support-ticket-erstellen      (Betreff, Beschreibung, Priorität, Anhang)
+├── support-bug-report            (Schritte, Erwartetes, Tatsächliches, Version)
+├── support-feature-request       (Titel, Beschreibung, Use-Case, Priorität)
+└── support-rueckgabe             (Bestell-Nr., Grund, Fotos, Erstattung)
+
+KATEGORIE: kommunikation
+├── email-anbieter-kontakt        (Anbieter-Name, Anlass, Inhalt)
+├── email-beschwerde              (Datum, Vorfall, Forderung, Frist)
+├── email-anfrage                 (Produkt, Menge, Lieferdatum, Konditionen)
+└── email-feedback                (Bewertung, Freitext, Empfehlung)
+
+KATEGORIE: authentifizierung
+├── login-standard                (Email, Passwort, CSRF, Remember-Me)
+├── login-2fa                     (+ OTP, Backup-Code)
+├── registrierung-standard        (Name, Email, Passwort, AGB)
+└── passwort-reset                (Email, Token, Neues-Passwort)
+```
+
+Jedes Gene enthält:
+- Feld-Definitionen mit Typen und Validierungsregeln
+- Sicherheitsklassen pro Feld
+- Bekannte Adapter-Konfigurationen
+- Anti-Bot Muster (Honeypot, Timing)
+- Bekannte Edge Cases
+
+---
+
+## 4. VOLLSTÄNDIGE ANFRAGE-PIPELINE
+
+```
+NUTZER: "Sende Kontaktformular an anbieter.de/kontakt"
+              │
+              ▼
+    ┌─────────────────────┐
+    │   SchemaDetector    │
+    │                     │
+    │ 1. HTML laden       │
+    │ 2. Sicherheitsprüf. │  ← ContentPolicy (CSP)
+    │ 3. Form-Felder lesen│
+    │ 4. Gene-Cache check │
+    │ 5. Schema erstellen │
+    └──────────┬──────────┘
+               │ DetectedSchema
+               ▼
+    ┌─────────────────────┐
+    │   GenomeManager     │
+    │                     │
+    │ Gibt es ein Gene    │
+    │ für diesen Typ?     │
+    │                     │
+    │ JA → laden          │
+    │ NEIN → Resolution   │  ← LLM + Research + EdgeCase
+    └──────────┬──────────┘
+               │ ComponentGene (konfiguriertes Formular)
+               ▼
+    ┌─────────────────────┐
+    │   UI-Generierung    │
+    │                     │
+    │ Gene → Widget       │
+    │ (Formular-Panel     │
+    │ mit allen Feldern,  │
+    │ Validierung live)   │
+    └──────────┬──────────┘
+               │ Nutzer füllt aus
+               ▼
+    ┌─────────────────────┐
+    │  SecurityPipeline   │
+    │  (jedes Feld)       │
+    │                     │
+    │ ① Länge prüfen      │
+    │ ② Unicode normieren │
+    │ ③ Injection scannen │
+    │ ④ CSP validieren    │
+    │ ⑤ Typ erzwingen     │
+    │ ⑥ Feld validieren   │
+    │ ⑦ HTML-Escape       │
+    └──────────┬──────────┘
+               │ NormalizedPayload
+               ▼
+    ┌─────────────────────┐
+    │  DataFabricEngine   │
+    │                     │
+    │ Intern → Anbieter-  │
+    │ Format übersetzen   │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │  AnbieterAdapter    │
+    │                     │
+    │ Typ wählen:         │
+    │ HTMLForm / REST /   │
+    │ Email / GraphQL     │
+    │                     │
+    │ CSRF einfügen ✓     │
+    │ Honeypot leer ✓     │
+    │ Rate-Limit ✓        │
+    │ Auth-Header ✓       │
+    └──────────┬──────────┘
+               │ HTTP Request (sicher)
+               ▼
+         ANBIETER-SERVER
+               │
+               ▼ Response
+    ┌─────────────────────┐
+    │  ResponseParser     │
+    │                     │
+    │ Erfolg? Fehler?     │
+    │ → Normalisieren     │
+    └──────────┬──────────┘
+               │
+    ┌──────────┴──────────┐
+    │ Erfolg              │ Fehler
+    │   ↓                 │   ↓
+    │ AdaptiveLearning    │ AdaptiveLearning
+    │ .record_success()   │ .record_failure()
+    │ fitness += 0.05     │ Edge Case speichern
+    │ Gene verbessert     │ LLM sucht Lösung
+    └─────────────────────┘
+```
+
+---
+
+## 5. SICHERHEITS-MATRIX (Was blockiert wird)
+
+```
+ANGRIFF              ERKANNT IN              REAGIERT MIT
+──────────────────   ─────────────────────   ──────────────────────────
+XSS                  InjectionPatterns       Feld ablehnen + Log
+                     ContentPolicy           
+                     ResponseValidator       
+
+SQL Injection        InjectionPatterns       Feld ablehnen + Alert
+                     (50+ Patterns)          
+
+Command Injection    InjectionPatterns       Sofort ablehnen
+                     (rm, del, $(), ``)      Keine weitere Verarbeitung
+
+Path Traversal       InjectionPatterns       Ablehnen
+                     (../, %2e%2e)           
+
+Prompt Injection     InjectionPatterns       Ablehnen
+("ignore previous")  (20+ Muster)            (LLM schützen)
+
+CSRF                 → CSRF-Token wird       Token automatisch holen
+                       automatisch gefunden   und mitsenden
+                       und mitgesendet        
+
+Bot-Detection        → Honeypot-Felder       Honeypots immer leer
+                       erkannt + leer         lassen
+                       gelassen               
+
+Timing-Attacks       → Minimum-Wartezeit     0.5-2s Verzögerung
+                       simuliert menschl.    (zufällig)
+                       Eingabe               
+
+Rate-Limiting        RateLimiter             Warten + Retry
+(429 responses)      (Exponential Backoff)   
+
+Unicode-Attacks      SecurityPipeline        Normalisieren (NFKC)
+(Zero-Width, RTL)    Stage.UNICODE_CHECK     oder ablehnen
+
+Große Payloads       MAX_BODY_BYTES=64KB     Ablehnen vor Verarbeitung
+```
+
+---
+
+## 6. VARIABLE API KONFIGURATION
+
+Anstatt für jeden Anbieter eine neue API: **Ein konfigurierbares Element**:
+
+```python
+@dataclass
+class APIFabricConfig:
+    """
+    Konfiguration für eine spezifische API-Integration.
+    Wird automatisch aus Gene geladen — manuell überschreibbar.
+    """
+    
+    # Identifikation
+    config_id: str
+    name: str                           # "DHL Kontaktformular"
+    domain: str                         # "dhl.de"
+    
+    # Schema
+    schema_type: SchemaType             # FORM / REST / GRAPHQL / EMAIL
+    endpoints: list[EndpointDef]        # Alle Endpunkte
+    
+    # Authentifizierung
+    auth: AuthConfig                    # Method, Credentials, Token-URL
+    
+    # Felder
+    field_mapping: dict[str, str]       # Intern → Extern
+    # z.B. {"user_name": "first_name", "user_email": "contact_email"}
+    
+    # Sicherheit
+    security: SecurityConfig
+    # csrf_enabled: bool
+    # honeypot_fields: list[str]
+    # rate_limit: RateLimitConfig
+    
+    # Verhalten
+    retry_policy: RetryPolicy           # max_retries, backoff, timeout
+    success_indicators: list[str]       # Texte die Erfolg signalisieren
+    error_indicators: list[str]         # Texte die Fehler signalisieren
+    
+    # Lernen
+    gene_id: str | None                 # Verknüpftes Gene
+    fitness: float = 0.5               # Steigt durch Erfahrung
+    interaction_count: int = 0
+
+# VERWENDUNG:
+config = APIFabricConfig(
+    config_id="dhl-kontakt-001",
+    name="DHL Kontaktformular",
+    domain="dhl.de",
+    schema_type=SchemaType.FORM,
+    endpoints=[EndpointDef(path="/kontakt", method="POST")],
+    auth=AuthConfig(method=AuthMethod.CSRF),
+    field_mapping={
+        "user_name": "name",
+        "user_email": "email",
+        "message": "nachricht",
+    },
+    # Rest wird automatisch aus Gene geladen
+)
+
+# Alternativ: Vollautomatisch
+config = await api_fabric.auto_configure("https://dhl.de/kontakt")
+# → SchemaDetector → GenomeManager → APIFabricConfig
+```
+
+---
+
+## 7. DATA GRABBER — EXTERNES WISSEN EINSAMMELN
+
+```python
+class DataGrabber:
+    """
+    Sammelt strukturierte Informationen von externen Quellen.
+    Sicher, rate-limited, gecacht.
+    Keine scraping-Verstöße — nur öffentliche, erlaubte Daten.
+    """
+    
+    GRABBER_STRATEGIES = [
+        GrabStrategy.OPENAPI_SPEC,       # /openapi.json
+        GrabStrategy.ROBOTS_TXT,         # Erlaubte Pfade prüfen
+        GrabStrategy.SITEMAP,            # sitemap.xml → Struktur
+        GrabStrategy.HTML_FORMS,         # Form-Elemente aus HTML
+        GrabStrategy.JSON_LD,            # Strukturierte Daten (schema.org)
+        GrabStrategy.META_TAGS,          # Description, Keywords
+        GrabStrategy.LINK_HEADERS,       # Link-rel Header (API-Discovery)
+    ]
+    
+    async def grab(self, url: str) -> GrabbedData:
+        # robots.txt IMMER zuerst prüfen
+        allowed = await self._check_robots(url)
+        if not allowed:
+            return GrabbedData.not_allowed(url)
+        
+        results = await asyncio.gather(*[
+            self._apply_strategy(strategy, url)
+            for strategy in self.GRABBER_STRATEGIES
+        ])
+        
+        merged = self._merge(results)
+        
+        # In Gene umwandeln + cachen
+        gene = self._assemble_gene_from_grabbed(merged)
+        self._genome.gene_index.add(gene)
+        
+        return merged
+
+@dataclass
+class GrabbedData:
+    url: str
+    forms: list[FormSchema]
+    api_endpoints: list[EndpointDef]
+    structured_data: dict              # JSON-LD schema.org
+    meta: dict                        # Title, Description etc.
+    robots_allowed: bool
+    cache_ttl: int                    # Wie lange gültig (Sekunden)
+    gene_id: str | None               # Erzeugtes/gefundenes Gene
+```
+
+---
+
+## 8. WAS BEREITS VORHANDEN IST
+
+```
+✅ VOLLSTÄNDIG FERTIG:
+─────────────────────
+ContentPolicy          → 13 CSP-Violation-Typen, sanitize()
+InjectionPatterns      → 8 Typen, 50+ Patterns, LRU-Cache
+InputValidator         → Email, URL, Phone, IPv4, UUID
+ResponseValidator      → LLM-Output Qualität + Sicherheit
+RateLimiter (Research) → Per-Source, Exponential Backoff, Request-Queue
+ResearchEngine         → GitHub, StackOverflow, Reddit, DuckDuckGo
+APIv2 (ai-ui)          → HMAC, Rate-Limit, CORS, CSRF, Webhooks
+SecurityManager        → JWT, Permissions, Audit-Log
+EventBus               → Rate-Limit, Replay, Late-Subscribe
+QueryEngine            → ReAct Tool-Use-Loop
+GenomeManager (Basis)  → Cache, find_best, derive, compose
+
+✅ TEILWEISE VORHANDEN (Adapter nötig):
+────────────────────────────────────────
+HTTP-Client            → in ResearchEngine Adaptern (GitHub, SO)
+                         → in LmStudioClient
+                         → Extraktion + Verallgemeinerung nötig
+
+Form-Parsing           → in HTMLFormDetector Ansatz (neu)
+                         → html.parser aus stdlib reicht
+
+OpenAPI-Detection      → in Ansätzen vorhanden
+                         → vollständige Implementierung nötig
+
+⬜ NEU ZU BAUEN:
+─────────────────
+SchemaDetector         → orchestriert alle Detection-Strategien
+DataFabricEngine       → normalisiert bidirektional
+SecurityPipeline       → kombiniert vorhandene Sicherheits-Module
+AnbieterAdapter-Set    → HTMLForm, REST, Email, GraphQL
+AdaptiveLearningEngine → Interaktionen → Gene
+DataGrabber            → robots.txt + OpenAPI + HTML + JSON-LD
+APIFabricConfig        → konfigurierbare Einzel-Konfiguration
+FormGene-Bibliothek    → 20+ vorbefüllte Formular-Gene
+```
+
+---
+
+## 9. INTEGRATION IN CONTAINER
+
+```python
+# CoreContainer Erweiterung (build_core):
+
+# Sicherheit (kombiniert)
+security_pipeline = SecurityPipeline(
+    content_policy=ContentPolicy.create_strict(),
+    injection_patterns=InjectionPatterns.instance(),
+    input_validator=InputValidator(),
+    event_bus=event_bus,
+)
+
+# Data Fabric
+schema_detector = SchemaDetector(
+    research_engine=research_engine,
+    genome_manager=genome_manager,
+    security_policy=ContentPolicy.create_strict(),
+)
+data_fabric = DataFabricEngine(
+    security_pipeline=security_pipeline,
+)
+data_grabber = DataGrabber(
+    schema_detector=schema_detector,
+    genome_manager=genome_manager,
+)
+
+# Adapter Registry
+adapter_registry = AdapterRegistry()
+adapter_registry.register(SchemaType.FORM, HTMLFormAdapter)
+adapter_registry.register(SchemaType.REST, RESTAdapter)
+adapter_registry.register(SchemaType.EMAIL, EmailFormAdapter)
+adapter_registry.register(SchemaType.GRAPHQL, GraphQLAdapter)
+
+# Adaptive Learning
+adaptive_learning = AdaptiveLearningEngine(
+    genome_manager=genome_manager,
+    edge_case_matrix=edge_case_matrix,
+    query_engine=query_engine,
+    event_bus=event_bus,
+)
+
+# Haupt-Fabric
+api_fabric = APIFabric(
+    schema_detector=schema_detector,
+    data_fabric=data_fabric,
+    adapter_registry=adapter_registry,
+    adaptive_learning=adaptive_learning,
+    data_grabber=data_grabber,
+    genome_manager=genome_manager,
+    event_bus=event_bus,
+)
+```
+
+---
+
+## 10. UMSETZUNGSREIHENFOLGE
+
+### Phase F-1 — Sicherheits-Foundation (2 Tage)
+```
+SecurityPipeline zusammenbauen aus vorhandenen Modulen
+→ ContentPolicy + InjectionPatterns + InputValidator kombinieren
+→ Tests: alle 8 Injection-Typen, CSP-Violations, Unicode-Attacks
+→ Kein Datum passiert diese Pipeline ungeprüft
+```
+
+### Phase F-2 — SchemaDetector (2 Tage)
+```
+HTMLFormDetector (html.parser, stdlib)
+OpenAPIDetector (json fetch + parse)
+PatternLearner (Domain → Gene lookup)
+SchemaDetector (orchestriert alle drei)
+→ Tests: echte Formulare gegen Schema erkennen
+```
+
+### Phase F-3 — Adapter-Set (3 Tage)
+```
+HTMLFormAdapter (inkl. CSRF + Honeypot)
+RESTAdapter (inkl. Auth, Rate-Limit)
+EmailFormAdapter (mailto + HTTP)
+GraphQLAdapter (Mutation-Builder)
+AdapterRegistry
+→ Tests: je Adapter gegen Mock-Server
+```
+
+### Phase F-4 — DataFabricEngine (1 Tag)
+```
+Normalisierung + Serialisierung
+Bidirektionale Übersetzung
+→ Tests: verschiedene Schema-Typen normalisieren
+```
+
+### Phase F-5 — FormGene-Bibliothek (2 Tage)
+```
+20+ Gene manuell definieren (kontakt, bestellung, support, auth)
+In SqliteGeneStore laden
+GeneIndex befüllen
+→ Tests: alle Gene laden, fitness >= 0.5, render für "desktop"
+```
+
+### Phase F-6 — DataGrabber + AdaptiveLearning (2 Tage)
+```
+DataGrabber (robots.txt + OpenAPI + HTML + JSON-LD)
+AdaptiveLearningEngine (success/failure recording)
+→ Tests: echte URL graben, Gene erzeugt, fitness steigt
+```
+
+### Phase F-7 — Integration + E2E (1 Tag)
+```
+APIFabric zusammenbauen
+In Container einbinden
+E2E-Test: URL → Schema → Gene → Form-Widget → Absenden → Erfolg → Fitness++
+```
+
+---
+
+## 11. EVENTS IM SYSTEM
+
+```
+"fabric.schema_detected"     → UI: Schema erkannt, Formular wird generiert
+"fabric.gene_found"          → UI: Bekanntes Muster verwendet
+"fabric.resolving"           → UI: Unbekannter Typ, analysiere...
+"fabric.form_ready"          → UI: Formular bereit zur Eingabe
+"security.field_rejected"    → Log + UI: Dieses Feld ist unsicher
+"security.pipeline_blocked"  → Alert: Sicherheitsproblem erkannt
+"fabric.send_started"        → UI: Sende an Anbieter...
+"fabric.send_success"        → UI: Erfolgreich gesendet
+"fabric.send_failed"         → UI: Fehler, versuche Lösung...
+"fabric.learning"            → Hintergrund: Gene wird verbessert
+"grabber.robots_denied"      → Log: Zugriff nicht erlaubt
+"grabber.schema_grabbed"     → GenomeManager: neues Gene verfügbar
+```
