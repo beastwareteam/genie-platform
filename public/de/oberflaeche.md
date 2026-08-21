@@ -26,6 +26,57 @@ können, was entsteht.
 *Ein Formular, wie es aus einer Beschreibung entsteht. Das Bild ist kein Entwurf: es wird
 bei jeder Änderung neu aus einem echten Bau aufgenommen.*
 
+## Die Bedienfläche selbst
+
+Alles, was auf dieser Seite steht, entsteht **in** einer Fläche — und die wird selten
+gezeigt. Hier ist sie, aufgenommen aus der laufenden Anwendung:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../bilder/oberflaeche/oberflaeche_gesamt.png">
+  <img src="../bilder/oberflaeche/oberflaeche_gesamt_hell.png" alt="Die Bedienflaeche der Plattform: oben eine Reihe Aktionsknoepfe, darunter der Verlauf mit einer gebauten, durchsuchbaren Tabelle offener Vorgaenge, unten das Eingabefeld mit dem Senden-Knopf und eine Statuszeile.">
+</picture>
+
+*Ein Satz genügte: „eine Tabelle mit meinen offenen Vorgängen". Was daraus entstand, steht
+im Verlauf — mit Suchfeld, Sortierung und CSV-Ausgabe, ohne dass davon etwas eigens
+angefordert werden musste. Auch dieses Bild ist kein Entwurf: es wird aus dem echten
+Programm aufgenommen, und wenn eine Bedienstelle daraus verschwindet, bricht die Aufnahme.*
+
+### Wo finden Sie was
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../bilder/oberflaeche/oberflaeche_wegweiser.png">
+  <img src="../bilder/oberflaeche/oberflaeche_wegweiser_hell.png" alt="Dieselbe Bedienflaeche mit nummerierten Markern an den Bedienstellen und einer Legende darunter: Aktionsleiste, Verlauf, Eingabe, Trenner und die Statuszeile mit dem Modell.">
+</picture>
+
+*Die Marker sitzen auf der echten Geometrie der Bedienelemente, nicht auf einer Zeichnung.*
+
+**Oben die Aktionsleiste (1).** Je ein Knopf für einen Baustein, den Sie oft brauchen —
+anpassbar über das Kontextmenü der Leiste, ein bis fünf Reihen hoch. **In der Mitte der
+Verlauf (2).** Was gebaut wurde, steht dort **bedienbar**: Sie sortieren die Tabelle, Sie
+tippen in das Suchfeld, Sie geben aus. **Unten die Eingabe (3).** Ein Satz genügt; Enter
+sendet, `/` zeigt die Befehle, `↑`/`↓` blättert durch das Gesagte.
+
+Zwischen den drei Bereichen liegen **Trenner**: daran ziehen Sie einen Bereich größer oder
+klappen ihn ganz zu. Die Größen bleiben erhalten — das Fenster erinnert sich an sie.
+
+In der Statuszeile stehen die Anzeigen zum Stand: **welches Modell antwortet (4)** und
+**was die Selbstprüfung meldet (5)**.
+
+### Dieselbe Fläche, zehn Gestaltungen
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../bilder/oberflaeche/oberflaeche_faecher.png">
+  <img src="../bilder/oberflaeche/oberflaeche_faecher_hell.png" alt="Sieben Fassungen derselben Bedienflaeche gefaechert hintereinander, von dunkel ueber gedeckte Farbtoene bis hell und kontraststark — dieselbe Anordnung, unterschiedliche Gestaltung.">
+</picture>
+
+*Sieben der zehn Paletten, gefächert — vorn die dunkle Voreinstellung, hinten die helle und
+die kontraststarke Fassung.*
+
+Die Gestaltung liegt **nicht** im Programmcode, sondern in Paletten: Farben, Abstände,
+Radien und Schriftgrößen stehen als benannte Werte da und werden zur Laufzeit gewechselt.
+Deshalb sieht auf allen Bildern oben dieselbe Anordnung anders aus, ohne dass ein Baustein
+etwas davon weiß — er fragt nach `accent.primary`, nicht nach einem Farbwert.
+
 ## Die sechs Fragen, nach denen sortiert wird
 
 | Wenn Sie… | dann greift |
