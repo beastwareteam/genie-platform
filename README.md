@@ -3,7 +3,7 @@
   <img src="public/bilder/kopf/start_hell.png" alt="Bannerbild: die Überschrift „Beschreiben Sie es. Es entsteht.“ neben einem gebauten Formular mit den Feldern Name, Abteilung und Gültig ab.">
 </picture>
 
-# Genie Platform
+# Genie AI Platform
 
 **Beschreiben Sie, was Sie brauchen — die Plattform baut daraus eine bedienbare Fläche.**
 
