@@ -1,0 +1,79 @@
+/* genie.css — die Abstaende der Site, an einer Stelle.
+ *
+ * Material setzt zwischen Aufzaehlungspunkten und in Tabellenzellen grosszuegig Luft; auf
+ * Seiten, die fast nur aus Aufzaehlungen und Tabellen bestehen — und das sind hier die
+ * meisten — laeuft der Text dadurch weit auseinander.
+ *
+ * Diese Datei wird mit veroeffentlicht. Sie traegt deshalb keine Vorfall-Daten und keine
+ * Innensprache; die Begruendung der Etappe steht im CHANGELOG, nicht hier.
+ *
+ * GRENZE: Das ist die Gestaltung der SITE, nicht der Anwendung. Die ThemeEngine-Regeln
+ * des Baums (§ ThemeEngine V2) gelten hier nicht — sie regeln Qt-Widgets, und diese
+ * Datei sieht kein Qt. Trotzdem stehen die Werte oben als benannte Variablen und nicht
+ * verstreut in den Regeln: eine Zahl, die an sechs Stellen steht, hat sechs Staende.
+ *
+ * Was hier bewusst NICHT angefasst wird: `line-height`. Der Zeilenabstand innerhalb
+ * eines Absatzes ist der Wert, an dem Lesbarkeit haengt (WCAG 1.4.8/1.4.12 nennen 1.5
+ * als Untergrenze). Enger gesetzt werden nur die Abstaende ZWISCHEN Bloecken.
+ */
+
+:root {
+  /* Zwischen zwei Punkten einer Aufzaehlung. Material: 0.5em. */
+  --genie-listenzeile: 0.25em;
+  /* Ober- und unterhalb einer ganzen Liste. Material: 1em. */
+  --genie-listenblock: 0.6em;
+  /* In einer Tabellenzelle, senkrecht und waagerecht. Material: 0.9375em 1.25em. */
+  --genie-zelle-hoch: 0.5em;
+  --genie-zelle-quer: 1em;
+  /* Unter einem Bild, bevor seine Unterschrift kommt. Material: 1em. */
+  --genie-bildunterschrift: 0.4em;
+  /* Zwischen zwei Zeilen des Inhaltsverzeichnisses rechts. Material: 0.625em. */
+  --genie-verzeichniszeile: 0.35em;
+}
+
+/* ── Aufzaehlungen ───────────────────────────────────────────────────────── */
+
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: var(--genie-listenzeile);
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-top: var(--genie-listenblock);
+  margin-bottom: var(--genie-listenblock);
+}
+
+/* Eine eingerueckte Unterliste braucht keinen zweiten Blockabstand — sie steht schon
+ * eingerueckt da und bekommt sonst oben und unten doppelt Luft. */
+.md-typeset li > ul,
+.md-typeset li > ol {
+  margin-top: var(--genie-listenzeile);
+  margin-bottom: 0;
+}
+
+/* ── Tabellen ────────────────────────────────────────────────────────────── */
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: var(--genie-zelle-hoch) var(--genie-zelle-quer);
+}
+
+/* ── Bilder und ihre Unterschriften ──────────────────────────────────────── */
+
+.md-typeset figure figcaption,
+.md-typeset figure > img + em {
+  margin-top: var(--genie-bildunterschrift);
+}
+
+/* Ein Bild in einem Absatz steht sonst mit voller Absatzluft darunter. */
+.md-typeset p > picture,
+.md-typeset p > img {
+  margin-bottom: var(--genie-bildunterschrift);
+}
+
+/* ── Inhaltsverzeichnis rechts ───────────────────────────────────────────── */
+
+.md-nav--secondary .md-nav__link {
+  margin-top: var(--genie-verzeichniszeile);
+}
