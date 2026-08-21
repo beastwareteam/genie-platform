@@ -58,7 +58,8 @@ Bedienung.
 ## Für Entwickler
 
 Einrichtung, Server-Betrieb, Architektur-Prüfung und Verzeichnisaufbau stehen in
-[docs/ENTWICKLERSTART.md](docs/ENTWICKLERSTART.md).
+`docs/ENTWICKLERSTART.md` — im Quelltext-Baum. Dieses Verzeichnis trägt die Beschreibung,
+nicht den Quelltext; die Datei liegt hier deshalb bewusst nicht.
 
 ---
 
