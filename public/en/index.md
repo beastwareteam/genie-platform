@@ -1,16 +1,16 @@
 ---
 icon: material/home
 ---
-<!-- quelle: de/index.md · stand: 2569fa5c779a · fassung: von Hand -->
+<!-- quelle: de/index.md · stand: f43e042549af · fassung: von Hand -->
 
-# Describe it. It gets built.
+# Genie AI Platform
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/start.png">
   <img src="../bilder/kopf/start_hell.png" alt="Banner image: the headline “Beschreiben Sie es. Es entsteht.” next to a generated form with the fields Name, Abteilung and Gültig ab.">
 </picture>
 
-Genie Platform is a working environment that assembles itself while you use it. You say in one
+Genie AI Platform is a working environment that assembles itself while you use it. You say in one
 sentence what you need — a table of your open invoices, a chart of monthly spending, a browser
 window with two tabs side by side — and a usable surface appears. No picking from a toolbox, no
 empty form waiting to be filled in.

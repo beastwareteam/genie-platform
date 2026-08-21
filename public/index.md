@@ -1,7 +1,7 @@
 ---
 icon: material/translate
 ---
-# Genie Platform
+# Genie AI Platform
 
 Beschreiben Sie, was Sie brauchen — die Plattform baut daraus eine bedienbare Fläche.
 

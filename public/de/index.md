@@ -1,14 +1,14 @@
 ---
 icon: material/home
 ---
-# Beschreiben Sie es. Es entsteht.
+# Genie AI Platform
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/start.png">
   <img src="../bilder/kopf/start_hell.png" alt="Bannerbild: die Überschrift „Beschreiben Sie es. Es entsteht.“ neben einem gebauten Formular mit den Feldern Name, Abteilung und Gültig ab.">
 </picture>
 
-Genie Platform ist eine Arbeitsumgebung, die sich beim Benutzen selbst zusammenbaut. Sie
+Genie AI Platform ist eine Arbeitsumgebung, die sich beim Benutzen selbst zusammenbaut. Sie
 sagen in einem Satz, was Sie brauchen — eine Tabelle Ihrer offenen Rechnungen, ein Diagramm
 der Ausgaben je Monat, ein Browserfenster mit zwei Reitern — und daraus entsteht eine
 bedienbare Fläche. Keine Auswahl aus einem Baukasten, kein leeres Formular, das erst
