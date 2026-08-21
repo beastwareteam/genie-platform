@@ -1,0 +1,5340 @@
+{
+  "zweck": "Verkleinertes Verzeichnis der bei Devicon vorhandenen Zeichen — nur Name, verfuegbare SVG-Fassungen und Markenfarbe. Damit misst scripts/technologie_register.py die Abdeckung OHNE Netzzugang: ein Werkzeug, dessen Befund vom Netz abhaengt, misst an verschiedenen Tagen Verschiedenes.",
+  "quelle": "https://raw.githubusercontent.com/devicons/devicon/master/devicon.json",
+  "lizenz": "Devicon: MIT. Die Zeichen selbst sind Marken ihrer Inhaber — siehe HERKUNFT.md.",
+  "stand": "2026-08-20",
+  "anzahl": 578,
+  "icons": [
+    {
+      "name": "aarch64",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#16358C"
+    },
+    {
+      "name": "adonisjs",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#5A45FF"
+    },
+    {
+      "name": "aerospike",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#c21417"
+    },
+    {
+      "name": "aframe",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#ee295f"
+    },
+    {
+      "name": "aftereffects",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#1F0740"
+    },
+    {
+      "name": "akka",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#15a9ce"
+    },
+    {
+      "name": "algolia",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#003dff"
+    },
+    {
+      "name": "almalinux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ffffff"
+    },
+    {
+      "name": "alpinejs",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#2d3441"
+    },
+    {
+      "name": "amazonwebservices",
+      "svg": [
+        "original-wordmark",
+        "plain-wordmark",
+        "line-wordmark"
+      ],
+      "farbe": "#f90"
+    },
+    {
+      "name": "anaconda",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#3eb049"
+    },
+    {
+      "name": "android",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#A4C439"
+    },
+    {
+      "name": "androidstudio",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#4285F4"
+    },
+    {
+      "name": "angular",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FFFFFF"
+    },
+    {
+      "name": "angularjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#c4473a"
+    },
+    {
+      "name": "angularmaterial",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ffa726"
+    },
+    {
+      "name": "ansible",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1A1918"
+    },
+    {
+      "name": "ansys",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "antdesign",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0073bb"
+    },
+    {
+      "name": "apache",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#cb2533"
+    },
+    {
+      "name": "apacheairflow",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#017cee"
+    },
+    {
+      "name": "apachekafka",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#231f20"
+    },
+    {
+      "name": "apachespark",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#e15919"
+    },
+    {
+      "name": "apex",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#0d9dda"
+    },
+    {
+      "name": "apl",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#24a148"
+    },
+    {
+      "name": "apollographql",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#112B49"
+    },
+    {
+      "name": "appcelerator",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ac162c"
+    },
+    {
+      "name": "apple",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "appwrite",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#fd366e"
+    },
+    {
+      "name": "archlinux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1791cf"
+    },
+    {
+      "name": "arduino",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00979d"
+    },
+    {
+      "name": "argocd",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ef7b4d"
+    },
+    {
+      "name": "artixlinux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#10a0cc"
+    },
+    {
+      "name": "astro",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff5d01"
+    },
+    {
+      "name": "atom",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#67595D"
+    },
+    {
+      "name": "awk",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#0a094d"
+    },
+    {
+      "name": "axios",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#5a29e4"
+    },
+    {
+      "name": "azure",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0089D6"
+    },
+    {
+      "name": "azuredevops",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#0078d4"
+    },
+    {
+      "name": "azuresqldatabase",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#005ba1"
+    },
+    {
+      "name": "babel",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f9dc3e"
+    },
+    {
+      "name": "babylonjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#bb464b"
+    },
+    {
+      "name": "backbonejs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#002A41"
+    },
+    {
+      "name": "ballerina",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#46C0BC"
+    },
+    {
+      "name": "bamboo",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#1068e2"
+    },
+    {
+      "name": "bash",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#293138"
+    },
+    {
+      "name": "bazel",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#76D275"
+    },
+    {
+      "name": "beats",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#07c"
+    },
+    {
+      "name": "behance",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0071e0"
+    },
+    {
+      "name": "bevyengine",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#282828"
+    },
+    {
+      "name": "biome",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#60a5fa"
+    },
+    {
+      "name": "bitbucket",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#205081"
+    },
+    {
+      "name": "blazor",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#5c2d91"
+    },
+    {
+      "name": "blender",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#DC7B2E"
+    },
+    {
+      "name": "bootstrap",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#712cf9"
+    },
+    {
+      "name": "bower",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ef5734"
+    },
+    {
+      "name": "browserstack",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#0070f0"
+    },
+    {
+      "name": "bulma",
+      "svg": [
+        "plain"
+      ],
+      "farbe": "#00d1b2"
+    },
+    {
+      "name": "bun",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#FBF0DF"
+    },
+    {
+      "name": "c",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#a9bacd"
+    },
+    {
+      "name": "cairo",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#f39914"
+    },
+    {
+      "name": "cakephp",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#D43D44"
+    },
+    {
+      "name": "canva",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#00C4CC"
+    },
+    {
+      "name": "capacitor",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#53B9FF"
+    },
+    {
+      "name": "carbon",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "cassandra",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1185b0"
+    },
+    {
+      "name": "centos",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#932178"
+    },
+    {
+      "name": "ceylon",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#AB710A"
+    },
+    {
+      "name": "chakraui",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#52c8c5"
+    },
+    {
+      "name": "chartjs",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff6384"
+    },
+    {
+      "name": "chrome",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ce4e4e"
+    },
+    {
+      "name": "circleci",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#343434"
+    },
+    {
+      "name": "clarity",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#13171a"
+    },
+    {
+      "name": "clickhouse",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f9ff69"
+    },
+    {
+      "name": "clion",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#21d789"
+    },
+    {
+      "name": "clojure",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#5881d8"
+    },
+    {
+      "name": "clojurescript",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#96ca4b"
+    },
+    {
+      "name": "cloudflare",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F38020"
+    },
+    {
+      "name": "cloudflareworkers",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ea9344"
+    },
+    {
+      "name": "cloudrun",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#4285f4"
+    },
+    {
+      "name": "cmake",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0e8a16"
+    },
+    {
+      "name": "cobol",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "codeac",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#005096"
+    },
+    {
+      "name": "codecov",
+      "svg": [
+        "plain"
+      ],
+      "farbe": "#e0225c"
+    },
+    {
+      "name": "codeigniter",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ee4323"
+    },
+    {
+      "name": "codepen",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "coffeescript",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#28334c"
+    },
+    {
+      "name": "composer",
+      "svg": [
+        "original",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "confluence",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#136be6"
+    },
+    {
+      "name": "consul",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#e03875"
+    },
+    {
+      "name": "contao",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#f47c00"
+    },
+    {
+      "name": "corejs",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "cosmosdb",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#59B3D8"
+    },
+    {
+      "name": "couchbase",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#EA2328"
+    },
+    {
+      "name": "couchdb",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e42528"
+    },
+    {
+      "name": "cpanel",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#ff6c2c"
+    },
+    {
+      "name": "cplusplus",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#004482"
+    },
+    {
+      "name": "crystal",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "csharp",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#68217a"
+    },
+    {
+      "name": "css3",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3d8fc6"
+    },
+    {
+      "name": "cucumber",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00a818"
+    },
+    {
+      "name": "cypressio",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#1b1e2e"
+    },
+    {
+      "name": "d3js",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f7974e"
+    },
+    {
+      "name": "dart",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00A8E1"
+    },
+    {
+      "name": "datadog",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#632ca6"
+    },
+    {
+      "name": "datagrip",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#21d789"
+    },
+    {
+      "name": "dataspell",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#087cfa"
+    },
+    {
+      "name": "datatables",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#ffffff"
+    },
+    {
+      "name": "dbeaver",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#382a24"
+    },
+    {
+      "name": "debian",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#A80030"
+    },
+    {
+      "name": "delphi",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#a81c21"
+    },
+    {
+      "name": "denojs",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "detaspace",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f73b95"
+    },
+    {
+      "name": "devicon",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#60BE86"
+    },
+    {
+      "name": "digitalocean",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#0080FF"
+    },
+    {
+      "name": "discloud",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#57f287"
+    },
+    {
+      "name": "discordjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0c0c14"
+    },
+    {
+      "name": "django",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#092e20"
+    },
+    {
+      "name": "djangorest",
+      "svg": [
+        "original",
+        "plain",
+        "line",
+        "original-wordmark",
+        "plain-wordmark",
+        "line-wordmark"
+      ],
+      "farbe": "#a30000"
+    },
+    {
+      "name": "docker",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#019bc6"
+    },
+    {
+      "name": "doctrine",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f56d39"
+    },
+    {
+      "name": "dot-net",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1384c8"
+    },
+    {
+      "name": "dotnetcore",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#623697"
+    },
+    {
+      "name": "dovecot",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#54bbab"
+    },
+    {
+      "name": "dreamweaver",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#470137"
+    },
+    {
+      "name": "dropwizard",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#24265d"
+    },
+    {
+      "name": "drupal",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0073BA"
+    },
+    {
+      "name": "duckdb",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "dyalog",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ff6a13"
+    },
+    {
+      "name": "dynamodb",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#527fff"
+    },
+    {
+      "name": "dynatrace",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "eclipse",
+      "svg": [
+        "original-wordmark",
+        "original"
+      ],
+      "farbe": "#2c2255"
+    },
+    {
+      "name": "ecto",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#77bf43"
+    },
+    {
+      "name": "elasticsearch",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00bfb3"
+    },
+    {
+      "name": "electron",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#47848f"
+    },
+    {
+      "name": "eleventy",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#1f1f1f"
+    },
+    {
+      "name": "elixir",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#380A4D"
+    },
+    {
+      "name": "elm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#34495E"
+    },
+    {
+      "name": "emacs",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#421f5f"
+    },
+    {
+      "name": "embeddedc",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#444444"
+    },
+    {
+      "name": "ember",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#E04E39"
+    },
+    {
+      "name": "entityframeworkcore",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#512bd4"
+    },
+    {
+      "name": "envoy",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#e13eaf"
+    },
+    {
+      "name": "erlang",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#a90533"
+    },
+    {
+      "name": "eslint",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#4b32c3"
+    },
+    {
+      "name": "expo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "express",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#444"
+    },
+    {
+      "name": "facebook",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#3d5a98"
+    },
+    {
+      "name": "fastapi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#009688"
+    },
+    {
+      "name": "fastify",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "faunadb",
+      "svg": [
+        "original-wordmark",
+        "original",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#3A1AB6"
+    },
+    {
+      "name": "feathersjs",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#333333"
+    },
+    {
+      "name": "fedora",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#294172"
+    },
+    {
+      "name": "fiber",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#00acd7"
+    },
+    {
+      "name": "figma",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f24e1e"
+    },
+    {
+      "name": "filamentphp",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "filezilla",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#bb0001"
+    },
+    {
+      "name": "firebase",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ffa000"
+    },
+    {
+      "name": "firebird",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f4790e"
+    },
+    {
+      "name": "firefox",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#DD732A"
+    },
+    {
+      "name": "flask",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#010101"
+    },
+    {
+      "name": "flutter",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#3FB6D3"
+    },
+    {
+      "name": "forgejo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#FF5500"
+    },
+    {
+      "name": "fortran",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#734f96"
+    },
+    {
+      "name": "foundation",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#008cba"
+    },
+    {
+      "name": "framermotion",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "framework7",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#ee350f"
+    },
+    {
+      "name": "fsharp",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#378BBA"
+    },
+    {
+      "name": "fusion",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#FF6A00"
+    },
+    {
+      "name": "gardener",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#009f76"
+    },
+    {
+      "name": "gatling",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f78557"
+    },
+    {
+      "name": "gatsby",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#64328B"
+    },
+    {
+      "name": "gazebo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f58113"
+    },
+    {
+      "name": "gcc",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#ffcfab"
+    },
+    {
+      "name": "gentoo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#9991d9"
+    },
+    {
+      "name": "ghost",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "gimp",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#716955"
+    },
+    {
+      "name": "git",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f34f29"
+    },
+    {
+      "name": "gitbook",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#346ddb"
+    },
+    {
+      "name": "github",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#181616"
+    },
+    {
+      "name": "githubactions",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#2088FF"
+    },
+    {
+      "name": "githubcodespaces",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#24292e"
+    },
+    {
+      "name": "gitkraken",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#179287"
+    },
+    {
+      "name": "gitlab",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#E24329"
+    },
+    {
+      "name": "gitpod",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FFA132"
+    },
+    {
+      "name": "gitter",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "gleam",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ffaff3"
+    },
+    {
+      "name": "glitch",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "go",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "line"
+      ],
+      "farbe": "#00acd7"
+    },
+    {
+      "name": "godot",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#478cbf"
+    },
+    {
+      "name": "goland",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#087cfa"
+    },
+    {
+      "name": "google",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#587dbd"
+    },
+    {
+      "name": "googlecloud",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#557ebf"
+    },
+    {
+      "name": "googlecolab",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ffb300"
+    },
+    {
+      "name": "gradle",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#02303a"
+    },
+    {
+      "name": "grafana",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f7a525"
+    },
+    {
+      "name": "grails",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#feb571"
+    },
+    {
+      "name": "graphql",
+      "svg": [
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e434aa"
+    },
+    {
+      "name": "groovy",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#619cbc"
+    },
+    {
+      "name": "grpc",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#00b0ad"
+    },
+    {
+      "name": "grunt",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fcaa1a"
+    },
+    {
+      "name": "gulp",
+      "svg": [
+        "plain"
+      ],
+      "farbe": "#eb4a4b"
+    },
+    {
+      "name": "hadoop",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ffff00"
+    },
+    {
+      "name": "handlebars",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "harbor",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#666666"
+    },
+    {
+      "name": "hardhat",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#fff100"
+    },
+    {
+      "name": "harvester",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#00A580"
+    },
+    {
+      "name": "haskell",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#5E5185"
+    },
+    {
+      "name": "haxe",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#EA8220"
+    },
+    {
+      "name": "helm",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#0F1689"
+    },
+    {
+      "name": "heroku",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#6762a6"
+    },
+    {
+      "name": "hibernate",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#bcae79"
+    },
+    {
+      "name": "homebrew",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fbb040"
+    },
+    {
+      "name": "hoppscotch",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#00d196"
+    },
+    {
+      "name": "html5",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e54d26"
+    },
+    {
+      "name": "htmx",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#333333"
+    },
+    {
+      "name": "hugo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FF4088"
+    },
+    {
+      "name": "hyperv",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#00188f"
+    },
+    {
+      "name": "ie10",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#1EBBEE"
+    },
+    {
+      "name": "ifttt",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "illustrator",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#330000"
+    },
+    {
+      "name": "inertiajs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#8163eb"
+    },
+    {
+      "name": "influxdb",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#020a47"
+    },
+    {
+      "name": "inkscape",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "insomnia",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#4000bf"
+    },
+    {
+      "name": "intellij",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#087cfa"
+    },
+    {
+      "name": "ionic",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#4e8ef7"
+    },
+    {
+      "name": "jaegertracing",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#67cfe3"
+    },
+    {
+      "name": "jamstack",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#F0047F"
+    },
+    {
+      "name": "jasmine",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#8a4182"
+    },
+    {
+      "name": "java",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#EA2D2E"
+    },
+    {
+      "name": "javascript",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f0db4f"
+    },
+    {
+      "name": "jeet",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FF664A"
+    },
+    {
+      "name": "jekyll",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "jenkins",
+      "svg": [
+        "line",
+        "original",
+        "plain"
+      ],
+      "farbe": "#F0D6B7"
+    },
+    {
+      "name": "jest",
+      "svg": [
+        "plain"
+      ],
+      "farbe": "#99425b"
+    },
+    {
+      "name": "jetbrains",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#FDCC21"
+    },
+    {
+      "name": "jetpackcompose",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#4285f4"
+    },
+    {
+      "name": "jhipster",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#4289c7"
+    },
+    {
+      "name": "jira",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#2684ff"
+    },
+    {
+      "name": "jiraalign",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#2684FF"
+    },
+    {
+      "name": "jquery",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0769ad"
+    },
+    {
+      "name": "json",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#505050"
+    },
+    {
+      "name": "jule",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#5f7389"
+    },
+    {
+      "name": "julia",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#28a745"
+    },
+    {
+      "name": "junit",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#dc514a"
+    },
+    {
+      "name": "jupyter",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F37726"
+    },
+    {
+      "name": "k3os",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fd824e"
+    },
+    {
+      "name": "k3s",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ffc519"
+    },
+    {
+      "name": "k6",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#7D64FF"
+    },
+    {
+      "name": "kaggle",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#20BEFF"
+    },
+    {
+      "name": "kaldi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#8c6432"
+    },
+    {
+      "name": "kalilinux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2777ff"
+    },
+    {
+      "name": "karatelabs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "karma",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#56c5a8"
+    },
+    {
+      "name": "kdeneon",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#21769a"
+    },
+    {
+      "name": "keras",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#d00000"
+    },
+    {
+      "name": "kibana",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F04E98"
+    },
+    {
+      "name": "knexjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#e16426"
+    },
+    {
+      "name": "knockout",
+      "svg": [
+        "plain-wordmark"
+      ],
+      "farbe": "#e42e16"
+    },
+    {
+      "name": "kotlin",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#c711e1"
+    },
+    {
+      "name": "krakenjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0081C2"
+    },
+    {
+      "name": "ktor",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#fc801d"
+    },
+    {
+      "name": "kubeflow",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#72a1e5"
+    },
+    {
+      "name": "kubernetes",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#326ce5"
+    },
+    {
+      "name": "labview",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#fed500"
+    },
+    {
+      "name": "laminas",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#013755"
+    },
+    {
+      "name": "laravel",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f0513f"
+    },
+    {
+      "name": "laraveljetstream",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#6875f5"
+    },
+    {
+      "name": "latex",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "leetcode",
+      "svg": [
+        "original",
+        "plain",
+        "line",
+        "original-wordmark",
+        "plain-wordmark",
+        "line-wordmark"
+      ],
+      "farbe": "#ffa116"
+    },
+    {
+      "name": "less",
+      "svg": [
+        "plain-wordmark"
+      ],
+      "farbe": "#2a4d80"
+    },
+    {
+      "name": "libgdx",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#e74a45"
+    },
+    {
+      "name": "linkedin",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0076b2"
+    },
+    {
+      "name": "linux",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "linuxmint",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#69b53f"
+    },
+    {
+      "name": "liquibase",
+      "svg": [
+        "original-wordmark",
+        "original"
+      ],
+      "farbe": "#FF3C00"
+    },
+    {
+      "name": "livewire",
+      "svg": [
+        "original-wordmark",
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FB70A9"
+    },
+    {
+      "name": "llvm",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#5A90B6"
+    },
+    {
+      "name": "lodash",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "logstash",
+      "svg": [
+        "original-wordmark",
+        "original",
+        "plain-wordmark",
+        "plain"
+      ],
+      "farbe": "#fec514"
+    },
+    {
+      "name": "love2d",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#fff"
+    },
+    {
+      "name": "lua",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#000080"
+    },
+    {
+      "name": "lumen",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#e54537"
+    },
+    {
+      "name": "magento",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f26322"
+    },
+    {
+      "name": "mapbox",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "mariadb",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#003545"
+    },
+    {
+      "name": "markdown",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "materializecss",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#EB7077"
+    },
+    {
+      "name": "materialui",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#1FA6CA"
+    },
+    {
+      "name": "matlab",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#6dd0c7"
+    },
+    {
+      "name": "matplotlib",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#11557C"
+    },
+    {
+      "name": "mattermost",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#19191c"
+    },
+    {
+      "name": "maven",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e97826"
+    },
+    {
+      "name": "maya",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#149B9A"
+    },
+    {
+      "name": "memcached",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2A9790"
+    },
+    {
+      "name": "mercurial",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#999"
+    },
+    {
+      "name": "meteor",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#df5052"
+    },
+    {
+      "name": "microsoftsqlserver",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ee352c"
+    },
+    {
+      "name": "minitab",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#8dc63f"
+    },
+    {
+      "name": "mithril",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#010002"
+    },
+    {
+      "name": "mobx",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#e05e11"
+    },
+    {
+      "name": "mocha",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#8d6748"
+    },
+    {
+      "name": "modx",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00decc"
+    },
+    {
+      "name": "moleculer",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#3cafce"
+    },
+    {
+      "name": "mongodb",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#4FAA41"
+    },
+    {
+      "name": "mongoose",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#860000"
+    },
+    {
+      "name": "monogame",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#e73c00"
+    },
+    {
+      "name": "moodle",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F7931E"
+    },
+    {
+      "name": "msdos",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "mysql",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#00618a"
+    },
+    {
+      "name": "nano",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#C8F"
+    },
+    {
+      "name": "nats",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#27aae1"
+    },
+    {
+      "name": "neo4j",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#018BFF"
+    },
+    {
+      "name": "neovim",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#5fb950"
+    },
+    {
+      "name": "nestjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#df234f"
+    },
+    {
+      "name": "netbeans",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1e6abf"
+    },
+    {
+      "name": "netbox",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#00857d"
+    },
+    {
+      "name": "netlify",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#05BDBA"
+    },
+    {
+      "name": "networkx",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2c7fb8"
+    },
+    {
+      "name": "newrelic",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#1d252c"
+    },
+    {
+      "name": "nextjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "nginx",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#090"
+    },
+    {
+      "name": "ngrok",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#02228e"
+    },
+    {
+      "name": "ngrx",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ba2bd2"
+    },
+    {
+      "name": "nhibernate",
+      "svg": [
+        "original-wordmark",
+        "original",
+        "plain-wordmark",
+        "plain",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#903a36"
+    },
+    {
+      "name": "nim",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ffe953"
+    },
+    {
+      "name": "nimble",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f7e941"
+    },
+    {
+      "name": "nixos",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#5277C3"
+    },
+    {
+      "name": "nodejs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#5fa04e"
+    },
+    {
+      "name": "nodemon",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#76d04b"
+    },
+    {
+      "name": "nodered",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#8f0000"
+    },
+    {
+      "name": "nodewebkit",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#3d3b47"
+    },
+    {
+      "name": "nomad",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#00ca8e"
+    },
+    {
+      "name": "norg",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#4878be"
+    },
+    {
+      "name": "notion",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#fff"
+    },
+    {
+      "name": "npm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#cb3837"
+    },
+    {
+      "name": "npss",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#0a37b2"
+    },
+    {
+      "name": "nuget",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#004880"
+    },
+    {
+      "name": "numpy",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#4dabcf"
+    },
+    {
+      "name": "nuxt",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#00dc82"
+    },
+    {
+      "name": "nuxtjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00c48d"
+    },
+    {
+      "name": "oauth",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "objectivec",
+      "svg": [
+        "plain"
+      ],
+      "farbe": "#0b5a9d"
+    },
+    {
+      "name": "ocaml",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F18803"
+    },
+    {
+      "name": "ohmyzsh",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "okta",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0f82c2"
+    },
+    {
+      "name": "openal",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#7e000d"
+    },
+    {
+      "name": "openapi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#91d400"
+    },
+    {
+      "name": "opencl",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "opencv",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#128dff"
+    },
+    {
+      "name": "opengl",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#5586a4"
+    },
+    {
+      "name": "openstack",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ed1944"
+    },
+    {
+      "name": "opensuse",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#73ba25"
+    },
+    {
+      "name": "opentelemetry",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f5a800"
+    },
+    {
+      "name": "opera",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f7192d"
+    },
+    {
+      "name": "oracle",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#EA1B22"
+    },
+    {
+      "name": "ory",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#5528ff"
+    },
+    {
+      "name": "p5js",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#ED225D"
+    },
+    {
+      "name": "packer",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#1d94dd"
+    },
+    {
+      "name": "pandas",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#130754"
+    },
+    {
+      "name": "passport",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#35df79"
+    },
+    {
+      "name": "perl",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#212177"
+    },
+    {
+      "name": "pfsense",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "phalcon",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#76c39b"
+    },
+    {
+      "name": "phoenix",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#FD4F00"
+    },
+    {
+      "name": "photonengine",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#004480"
+    },
+    {
+      "name": "photoshop",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#001e36"
+    },
+    {
+      "name": "php",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#777bb3"
+    },
+    {
+      "name": "phpstorm",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#b74af7"
+    },
+    {
+      "name": "pixijs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e72264"
+    },
+    {
+      "name": "playwright",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#2EAD33"
+    },
+    {
+      "name": "plotly",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3d4c73"
+    },
+    {
+      "name": "pm2",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "pnpm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f9ad00"
+    },
+    {
+      "name": "podman",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#892ca0"
+    },
+    {
+      "name": "poetry",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#0080c5"
+    },
+    {
+      "name": "polygon",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#7950DD"
+    },
+    {
+      "name": "portainer",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#3BBCED"
+    },
+    {
+      "name": "postcss",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#DD3A0A"
+    },
+    {
+      "name": "postgresql",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#336791"
+    },
+    {
+      "name": "postman",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f37036"
+    },
+    {
+      "name": "powershell",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#1E2A3A"
+    },
+    {
+      "name": "premierepro",
+      "svg": [
+        "plain",
+        "original"
+      ],
+      "farbe": "#2A0634"
+    },
+    {
+      "name": "primeng",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "prisma",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#2D3748"
+    },
+    {
+      "name": "processing",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#1f34ab"
+    },
+    {
+      "name": "processwire",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#1e87f0"
+    },
+    {
+      "name": "prolog",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F46C30"
+    },
+    {
+      "name": "prometheus",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#e75225"
+    },
+    {
+      "name": "protractor",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#d51c2f"
+    },
+    {
+      "name": "proxmox",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e57000"
+    },
+    {
+      "name": "pug",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#56332b"
+    },
+    {
+      "name": "pulsar",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#2c3e50"
+    },
+    {
+      "name": "pulumi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f6bf29"
+    },
+    {
+      "name": "puppeteer",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#00d8a2"
+    },
+    {
+      "name": "purescript",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#14161a"
+    },
+    {
+      "name": "putty",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#0000fc"
+    },
+    {
+      "name": "pycharm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#21D789"
+    },
+    {
+      "name": "pypi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3775a9"
+    },
+    {
+      "name": "pyscript",
+      "svg": [
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#fda703"
+    },
+    {
+      "name": "pytest",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#009fe3"
+    },
+    {
+      "name": "python",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ffd845"
+    },
+    {
+      "name": "pytorch",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#EE4C2C"
+    },
+    {
+      "name": "qodana",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff318c"
+    },
+    {
+      "name": "qt",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#41cd52"
+    },
+    {
+      "name": "qtest",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#1a62b3"
+    },
+    {
+      "name": "quarkus",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#4695EB"
+    },
+    {
+      "name": "quasar",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00b4ff"
+    },
+    {
+      "name": "qwik",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#18B6F6"
+    },
+    {
+      "name": "r",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#1f65b7"
+    },
+    {
+      "name": "rabbitmq",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff6600"
+    },
+    {
+      "name": "racket",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#9f1d20"
+    },
+    {
+      "name": "radstudio",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f42434"
+    },
+    {
+      "name": "rails",
+      "svg": [
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#CC0000"
+    },
+    {
+      "name": "railway",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fff"
+    },
+    {
+      "name": "rancher",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2453FF"
+    },
+    {
+      "name": "raspberrypi",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#c51850"
+    },
+    {
+      "name": "reach",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#6AC6E7"
+    },
+    {
+      "name": "react",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#61dafb"
+    },
+    {
+      "name": "reactbootstrap",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#41e0fd"
+    },
+    {
+      "name": "reactnative",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#61dafb"
+    },
+    {
+      "name": "reactnavigation",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#7b61c1"
+    },
+    {
+      "name": "reactrouter",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f44250"
+    },
+    {
+      "name": "readthedocs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line"
+      ],
+      "farbe": "#32322A"
+    },
+    {
+      "name": "realm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#6e60f9"
+    },
+    {
+      "name": "rect",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#262626"
+    },
+    {
+      "name": "redhat",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e93442"
+    },
+    {
+      "name": "redis",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#d82c20"
+    },
+    {
+      "name": "redux",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#764abc"
+    },
+    {
+      "name": "reflex",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#664ec6"
+    },
+    {
+      "name": "remix",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#121212"
+    },
+    {
+      "name": "renpy",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ff7f7f"
+    },
+    {
+      "name": "replit",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#F26207"
+    },
+    {
+      "name": "rexx",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#d81511"
+    },
+    {
+      "name": "rider",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#dd1265"
+    },
+    {
+      "name": "rocksdb",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#ffbe00"
+    },
+    {
+      "name": "rockylinux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#10b982"
+    },
+    {
+      "name": "rollup",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ff3333"
+    },
+    {
+      "name": "ros",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#21304c"
+    },
+    {
+      "name": "rspec",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#6de1fa"
+    },
+    {
+      "name": "rstudio",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#75aadb"
+    },
+    {
+      "name": "ruby",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#d91404"
+    },
+    {
+      "name": "rubymine",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FC801D"
+    },
+    {
+      "name": "rust",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "rxjs",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#df1c85"
+    },
+    {
+      "name": "safari",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line-wordmark",
+        "line"
+      ],
+      "farbe": "#1B88CA"
+    },
+    {
+      "name": "salesforce",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#00a1e0"
+    },
+    {
+      "name": "sanity",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#F03E2F"
+    },
+    {
+      "name": "sass",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#cc6699"
+    },
+    {
+      "name": "scala",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#de3423"
+    },
+    {
+      "name": "scalingo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#173aee"
+    },
+    {
+      "name": "scikitlearn",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#f89939"
+    },
+    {
+      "name": "sdl",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#173354"
+    },
+    {
+      "name": "selenium",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#CF0A2C"
+    },
+    {
+      "name": "sema",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "sentry",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#362d59"
+    },
+    {
+      "name": "sequelize",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3b4b72"
+    },
+    {
+      "name": "shopware",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#179eff"
+    },
+    {
+      "name": "shotgrid",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "sketch",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fdad00"
+    },
+    {
+      "name": "slack",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#2D333A"
+    },
+    {
+      "name": "socketio",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#010101"
+    },
+    {
+      "name": "solidity",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#383838"
+    },
+    {
+      "name": "solidjs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#2c4f7c"
+    },
+    {
+      "name": "sonarqube",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#549dd0"
+    },
+    {
+      "name": "sourceengine",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#f79a10"
+    },
+    {
+      "name": "sourcetree",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#205081"
+    },
+    {
+      "name": "spack",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#0F3A80"
+    },
+    {
+      "name": "spicedb",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#FB5B62"
+    },
+    {
+      "name": "splunk",
+      "svg": [
+        "original-wordmark"
+      ],
+      "farbe": "#0C1724"
+    },
+    {
+      "name": "spring",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#5FB832"
+    },
+    {
+      "name": "spss",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#cc1e4c"
+    },
+    {
+      "name": "spyder",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#8c0000"
+    },
+    {
+      "name": "sqlalchemy",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#333333"
+    },
+    {
+      "name": "sqldeveloper",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#adadad"
+    },
+    {
+      "name": "sqlite",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#0f80cc"
+    },
+    {
+      "name": "ssh",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#231F20"
+    },
+    {
+      "name": "stackblitz",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#1389fd"
+    },
+    {
+      "name": "stackoverflow",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#F58025"
+    },
+    {
+      "name": "stata",
+      "svg": [
+        "original-wordmark"
+      ],
+      "farbe": "#195f92"
+    },
+    {
+      "name": "stenciljs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "storybook",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FF4785"
+    },
+    {
+      "name": "streamlit",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#7d353b"
+    },
+    {
+      "name": "styledcomponents",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#d268a7"
+    },
+    {
+      "name": "stylus",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#333333"
+    },
+    {
+      "name": "subversion",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#809cc8"
+    },
+    {
+      "name": "sulu",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#112a46"
+    },
+    {
+      "name": "supabase",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3ecf8e"
+    },
+    {
+      "name": "surrealdb",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#c900d1"
+    },
+    {
+      "name": "svelte",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff3e00"
+    },
+    {
+      "name": "svgo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#fff"
+    },
+    {
+      "name": "swagger",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#85ea2d"
+    },
+    {
+      "name": "swift",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#F05138"
+    },
+    {
+      "name": "swiper",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#0080FF"
+    },
+    {
+      "name": "symfony",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#1A171B"
+    },
+    {
+      "name": "tailwindcss",
+      "svg": [
+        "original-wordmark",
+        "original",
+        "plain-wordmark"
+      ],
+      "farbe": "#38bdf8"
+    },
+    {
+      "name": "talos",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f92a20"
+    },
+    {
+      "name": "tauri",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#FFC131"
+    },
+    {
+      "name": "teleport",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#512fc9"
+    },
+    {
+      "name": "tensorflow",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#ff6f00"
+    },
+    {
+      "name": "terraform",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#5c4ee5"
+    },
+    {
+      "name": "terramate",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#fff"
+    },
+    {
+      "name": "tex",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "thealgorithms",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#00BCB4"
+    },
+    {
+      "name": "threedsmax",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#37a5cc"
+    },
+    {
+      "name": "threejs",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "thymeleaf",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#005f0f"
+    },
+    {
+      "name": "titaniumsdk",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#bd222b"
+    },
+    {
+      "name": "tmux",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1bb91f"
+    },
+    {
+      "name": "tomcat",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#D1A41A"
+    },
+    {
+      "name": "tortoisegit",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#4b8eb4"
+    },
+    {
+      "name": "towergit",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#d18900"
+    },
+    {
+      "name": "traefikmesh",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#9D0FB0"
+    },
+    {
+      "name": "traefikproxy",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#24a1c1"
+    },
+    {
+      "name": "travis",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2d3136"
+    },
+    {
+      "name": "trello",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#0052cc"
+    },
+    {
+      "name": "trpc",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#398ccb"
+    },
+    {
+      "name": "turbo",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#5cd8e5"
+    },
+    {
+      "name": "twilio",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#f22f46"
+    },
+    {
+      "name": "twitter",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "typescript",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#007acc"
+    },
+    {
+      "name": "typo3",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#f49700"
+    },
+    {
+      "name": "ubuntu",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#e95420"
+    },
+    {
+      "name": "unifiedmodelinglanguage",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#452e7f"
+    },
+    {
+      "name": "unity",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#4d4d4d"
+    },
+    {
+      "name": "unix",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#4051b5"
+    },
+    {
+      "name": "unrealengine",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#000000"
+    },
+    {
+      "name": "uwsgi",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#bad05e"
+    },
+    {
+      "name": "v8",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#00C4CC"
+    },
+    {
+      "name": "vaadin",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#00b4f0"
+    },
+    {
+      "name": "vagrant",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#127eff"
+    },
+    {
+      "name": "vala",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#a56de2"
+    },
+    {
+      "name": "vault",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#ffd814"
+    },
+    {
+      "name": "veevalidate",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#04c971"
+    },
+    {
+      "name": "vercel",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "vertx",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#782a91"
+    },
+    {
+      "name": "vim",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#179a33"
+    },
+    {
+      "name": "visualbasic",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#004e8c"
+    },
+    {
+      "name": "visualstudio",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#52218a"
+    },
+    {
+      "name": "vite",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#006BFF"
+    },
+    {
+      "name": "vitejs",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ffdd35"
+    },
+    {
+      "name": "vitess",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#f16827"
+    },
+    {
+      "name": "vitest",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#fcc72b"
+    },
+    {
+      "name": "vscode",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#3C99D4"
+    },
+    {
+      "name": "vscodium",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#3C99D4"
+    },
+    {
+      "name": "vsphere",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#0091da"
+    },
+    {
+      "name": "vuejs",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#41B883"
+    },
+    {
+      "name": "vuestorefront",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#5ecf7b"
+    },
+    {
+      "name": "vuetify",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#1697F6"
+    },
+    {
+      "name": "vulkan",
+      "svg": [
+        "original",
+        "line"
+      ],
+      "farbe": "#ac162c"
+    },
+    {
+      "name": "vyper",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#9F4CF2"
+    },
+    {
+      "name": "waku",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#dd2e44"
+    },
+    {
+      "name": "wasm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#654ff0"
+    },
+    {
+      "name": "web3js",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#f16822"
+    },
+    {
+      "name": "webflow",
+      "svg": [
+        "original"
+      ],
+      "farbe": "#4353ff"
+    },
+    {
+      "name": "webgpu",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#005a9c"
+    },
+    {
+      "name": "weblate",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#2eccaa"
+    },
+    {
+      "name": "webpack",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#1C78C0"
+    },
+    {
+      "name": "webstorm",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#07c3f2"
+    },
+    {
+      "name": "windows11",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#0078d4"
+    },
+    {
+      "name": "windows8",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#00adef"
+    },
+    {
+      "name": "wolfram",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#dd1100"
+    },
+    {
+      "name": "woocommerce",
+      "svg": [
+        "original",
+        "plain",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#7f54b3"
+    },
+    {
+      "name": "wordpress",
+      "svg": [
+        "original",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#494949"
+    },
+    {
+      "name": "xamarin",
+      "svg": [
+        "original",
+        "original-wordmark"
+      ],
+      "farbe": "#3498DB"
+    },
+    {
+      "name": "xcode",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#069CEC"
+    },
+    {
+      "name": "xd",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#470137"
+    },
+    {
+      "name": "xml",
+      "svg": [
+        "original",
+        "plain",
+        "line"
+      ],
+      "farbe": "#005fad"
+    },
+    {
+      "name": "yaml",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#cb171e"
+    },
+    {
+      "name": "yarn",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#2c8ebb"
+    },
+    {
+      "name": "yii",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#40b3d8"
+    },
+    {
+      "name": "yugabytedb",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark"
+      ],
+      "farbe": "#ff5f3b"
+    },
+    {
+      "name": "yunohost",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#ffffff"
+    },
+    {
+      "name": "zend",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#68b604"
+    },
+    {
+      "name": "zig",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain-wordmark"
+      ],
+      "farbe": "#f7a41d"
+    },
+    {
+      "name": "zsh",
+      "svg": [
+        "original",
+        "original-wordmark",
+        "plain",
+        "plain-wordmark",
+        "line",
+        "line-wordmark"
+      ],
+      "farbe": "#000"
+    },
+    {
+      "name": "zustand",
+      "svg": [
+        "original",
+        "plain"
+      ],
+      "farbe": "#443e38"
+    }
+  ]
+}

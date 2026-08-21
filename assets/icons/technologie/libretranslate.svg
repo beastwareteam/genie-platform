@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="128" height="128">
+<!-- Gerahmt von scripts/technologie_icons_bauen.py: nur verschoben und skaliert (x5.4020). Farben, Formen und Seitenverhaeltnis unveraendert. Herkunft und Lizenz: assets/icons/technologie/HERKUNFT.md -->
+<g transform="translate(-0.8237 -0.8237) scale(5.401971)" fill="none" stroke="currentColor" stroke-width="1.4246" stroke-linecap="round" stroke-linejoin="round">
+<path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" />
+</g>
+</svg>

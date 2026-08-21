@@ -6,3 +6,222 @@ __pycache__/
 .venv/
 .vscode/
 *.log
+tests/.pytest_tmp/
+# Lauf-Sperre (tests/_runlock): Laufzeitzustand dieses Rechners — PID des laufenden
+# Testlaufs. Gehört nach § Arbeitsbaum-Hygiene ausdrücklich NICHT in die Versionierung.
+.pytest_run.lock
+
+# Runtime-Datenbanken
+*.db
+*.db.versions
+workflow.db
+
+# Beiseite gelegte Datenbank-Kopien — SUFFIX-OFFEN, nicht endungsverankert.
+#
+# Belegter Anlass (2026-08-02, Struktur-Befund §2b): `data/embedding_cache.db.abnahme-beiseite`
+# (1,3 MB) stand unverfolgt UND unignoriert im Baum. `*.db` oben greift nicht, weil `.db` dort
+# nicht das letzte Suffix ist — ein angehaengtes Freitext-Suffix umgeht JEDE endungsverankerte
+# Regel. Genau derselbe Fehlermustertyp, den `*bak` weiter unten schon einmal beheben musste
+# (dort stand das Kuerzel VOR "bak", hier steht es DAHINTER).
+*.db.*
+*.sqlite.*
+
+# Demo-Output
+.demo_output/
+
+# Vision/YOLO-Modelle (Binär-Artefakte, Starter-Kit + trainierte Modelle)
+#
+# MUSTERBASIERT, nicht pfad-verankert. Belegter Anlass (2026-08-01): die drei früheren Zeilen
+# waren auf `data/models/` verankert — `yolov8n.pt` lag am Wurzelverzeichnis und war deshalb
+# 6,5 MB lang der größte verfolgte Blob des Repos, ohne dass ein Wächter es sah.
+*.pt
+*.pth
+*.onnx
+
+# Copilot-Archiv
+.copilot_archive/
+
+# Config-Override (lokal, nicht committen)
+config/local_*.toml
+data/learned_file_types.json
+
+# Backup-Dateien (vor Edits automatisch erstellt — nie committen)
+*.bak
+*.bak2
+*.bak3
+*.s2bak
+
+# Laufzeitzustand (CLAUDE.md § Arbeitsbaum-Hygiene, Sorte 3): von der Maschine geschrieben,
+# gilt nur auf DIESEM Rechner (Sitzung, Fensterkoordinaten dieses Bildschirms, binäre Lern-DB).
+# Die Struktur bleibt über die verfolgten `*.example.json`-Vorlagen daneben beobachtbar.
+#
+# OHNE Verzeichnis-Präfix — ein Muster ohne Slash greift in JEDEM Verzeichnis. Belegter Anlass
+# (2026-08-01): die früheren `data/…`-Zeilen ließen `src/data/intent_patterns.sqlite` und
+# `src/data/model_registry_cache.json` durch; das Hygiene-Gate lief dabei grün, weil auch seine
+# Prüfliste pfad-verankert war. Die `*.example.json`-Vorlagen matchen hier nicht mit.
+editor_session.json
+editor_favorites.json
+overlay_layout.json
+media_session.json
+# Vorschlagsdateien der i18n-Extraktion (Systemstruktur-Plan § Stufe 2.3). Arbeitsstand eines
+# Menschen an EINEM Modul: entsteht mit `--plan`, wird mit `--anwenden` verbraucht und gelöscht.
+# Was davon dauerhaft gilt, steht danach in der Sprachdatei, im Präfixregister und in der
+# Wiedervorlage — die drei sind verfolgt. Der Plan selbst ist Sorte 3 (Laufzeitzustand).
+i18n_plaene/
+# Binäre Lern-/Nutzungs-Datenbanken (nicht diffbar, nicht mergebar) — überall, nicht nur in data/.
+*.sqlite
+*.sqlite-*
+# Flüchtige Kopfdaten verfolgter Belege (Sorte 2) — damit sich der Beleg nur meldet, wenn sich
+# der BEFUND ändert, nicht bei jedem Lauf.
+data/arch_snapshots/arch_map_meta.json
+docs/runtime/gate_reports/boundary_latest_meta.json
+docs/runtime/gate_reports/sensors_latest_meta.json
+docs/runtime/redundanz_befund_meta.json
+
+# Block 0 — Auslegeordnung (scripts/*_inventur|landkarte|register|bilanz.py).
+# Dieselbe Sorte 2 wie oben: der Befund steht verfolgt in der .md daneben, der
+# Lauf-Zeitstempel hier. Sieben Werkzeuge, sieben Nebendateien.
+docs/runtime/schichten_inventur_meta.json
+docs/runtime/leser_register_meta.json
+docs/runtime/speicher_landkarte_meta.json
+docs/runtime/ereignis_registries_meta.json
+docs/runtime/regel_landkarte_meta.json
+docs/runtime/lern_bilanz_meta.json
+docs/runtime/auslegeordnung_meta.json
+docs/runtime/gestaltungsebene_erhebung_meta.json
+
+# Runtime-Daten
+data/logs/
+data/last_used_models.json
+data/gene_data/
+data/sessions/
+data/genes/
+
+# Eigenproduktion (E4) — Sorte **Laufzeitzustand**: die Plattform schreibt sie, ein Bau
+# alle 300 s wuerde den Arbeitsbaum dauernd veraendern. Die Struktur bleibt ueber die
+# verfolgte Vorlage beobachtbar; die Uebernahme in den Baum ist eine bewusste Handlung
+# (`promote_to_tree` -> config/genes/).
+# `/*` statt `/`: einen **Ordner** kann Git nicht wieder aufmachen — steht das
+# Verzeichnis selbst auf der Liste, greift keine Ausnahme darin (belegt am ersten Versuch).
+genes/eigenproduktion/*
+!genes/eigenproduktion/_vorlage.example.yaml
+htmlcov/
+.coverage
+.versions
+
+# Benchmark-Ergebnisse (lokal)
+benchmark_comparison_report*.json
+coverage_phase*.json
+.genie_refactor_progress.json
+
+# Root-Laufzeit-Artefakte (regenerieren sich; vom genie_workspace_cleanup verwaltet) — nie committen.
+# Quelle: tools/genie_workspace_cleanup.py ROOT_ARTIFACT_NAMES
+server_out.txt
+server_err.txt
+test_output.txt
+gene_overlay_state.json
+# Cleanup-Ziel für verschobene Root-Artefakte (Library-Archiv) — lokal, nicht committen.
+library/workspace_artifacts/
+
+# Lokale Pre-Edit-Backups (CLAUDE.md Backup-Pflicht) — nie committen
+#
+# EIN verallgemeinertes Muster statt einer Liste je Suffix. Belegter Anlass (2026-07-27):
+# die Etappen-Kopien `.a4bak` … `.b8bak` (91 Stück) fielen durch ALLE Muster unten, weil das
+# Kürzel VOR "bak" steht — der Arbeitsbaum meldete 96 offene Einträge, in denen keine einzige
+# ungesicherte Änderung lag. `*.s2bak` (Zeile 35) ist der Beleg, dass derselbe Fall schon
+# einmal auftrat und für genau einen Suffix von Hand geflickt wurde.
+*bak
+*.bak_*
+*.bak[0-9]*
+*.bak-*
+
+# Lokale Scratch-/Diagnose-Dumps — nie committen
+bt.txt
+mi.txt
+import_time.txt
+
+# Generierte Architektur-Snapshots (S214-Cleanup) — nur arch_map.json wird getrackt,
+# die timestamped arch_<ISO>.json sind reines Laufzeit-Archiv (kein Code liest die Historie).
+data/arch_snapshots/arch_20*.json
+
+# Voll-Baum-Backups (S214-Cleanup) — bleiben lokal auf der Disk, nicht in der Versionskontrolle.
+backups/
+
+# Recovery-Stände (lokal aufbewahrt, nicht committen) — z.B. *.py.session_work_<version>
+*.session_work_*
+
+# Lokales Archiv (S214) — verschoben statt gelöscht (Strays/Recovery-Stände), nicht committen.
+archive/
+
+# Ausgabeverzeichnis von `genie-refactor scaffold` (tools/genie_refactor/cli.py, Vorgabe
+# --output-dir). Reine Werkzeug-Ausgabe: Scaffold-Vorschläge, die niemand liest.
+#
+# Kam am 2026-05-30 durch den Sammel-Commit „chore: pre-phase-0 backup" in den Index — 46
+# Dateien, darunter zwölf gleichnamige `if_elif-kette_N_äste_registry.py` mit Umlaut im
+# Dateinamen. 2026-08-02 aus dem Index genommen (Struktur-Befund §2f); der Inhalt bleibt
+# auf der Disk.
+refactor_output/
+
+# SQLite-WAL-Sidecars (transient, regenerieren sich aus der Basis-.sqlite) — nicht committen.
+*.sqlite-shm
+*.sqlite-wal
+
+# Laufzeit-State (transient, entsteht im Betrieb / regeneriert sich) — nicht committen (S214).
+# Ebenfalls ohne Verzeichnis-Präfix (siehe Begründung oben bei editor_session.json).
+gene_overlay_state.json
+model_registry_cache.json
+session_plan.json
+
+# SQLite-WAL/SHM-Sidecars (.db-Familie, transient) — wie *.sqlite-shm/-wal, nie committen.
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Laufzeit-Verzeichnis + generierte Runtime-Reports (regenerieren sich, kein Repo-Inhalt).
+# `data/runtime/` traf `src/data/runtime/gene_usage.sqlite` nicht — deshalb ohne Präfix.
+data/runtime/
+src/data/runtime/
+docs/runtime/intent_coverage.md
+# Schwester von intent_coverage.md: erzeugt aus main.py (Setting `usage_report_path`), traegt
+# einen Zeitstempel im Kopf und wechselnde Zaehlstaende — meldet sich also bei JEDEM App-Start
+# als Aenderung. Stand bis 2026-08-02 weder verfolgt noch ignoriert (Struktur-Befund §2b).
+docs/runtime/gene_gap_report.md
+
+# TTS-Engine + Stimm-Modelle (lokal, nicht committen)
+data/tts/
+
+# Browser-Profil / WebEngine-Cache (reiner Laufzeit-Zustand, regeneriert sich) — nie committen.
+data/web_profile/
+
+# Heruntergeladene / Test-Medien (Laufzeit-Artefakte) — nicht committen.
+downloads/
+
+# setuptools Build-Metadaten (generiert aus pyproject/setup) — nicht committen.
+src/genie_platform.egg-info/
+
+
+# Newborn-Child Etappe 1: fluechtige Kopfdaten des Beleg-Laufs (Zeitstempel/Qt-Version).
+# Der Befund selbst steht verfolgt in docs/runtime/render_coverage.md.
+docs/runtime/render_coverage.meta.json
+
+# Medien-Playlisten (Sorte „Laufzeitzustand", § Arbeitsbaum-Hygiene): Nutzdaten dieses
+# Rechners mit absoluten Pfaden auf lokale Laufwerke — weder Quelle noch Beleg.
+# `my.m3u` lag bis v2.740.8 verfolgt in der Repo-Wurzel.
+*.m3u
+*.m3u8
+
+# Laufzeit-Ledger des Maximaltests (`make max`) — Rohzeilen je Test, Momentaufnahme eines
+# Laufs. Der verdichtete Befund liegt verfolgt in docs/runtime/testlauf_budget.md.
+.laufzeit/
+# Fluechtige Kopfdaten des Laufzeit-Befunds (Wanduhr, Arbeiterzahl, Rechner) — dieselbe
+# Trennung wie bei sensors_latest_meta.json: der Befund ist verfolgt, die Uhr nicht.
+docs/runtime/testlauf_budget_meta.json
+
+# Fluechtige Kopfdaten der Konstruktions-Quote (Messuhr, Python-Version, Dateizahl) —
+# dieselbe Trennung wie oben. Der Befund steht verfolgt in
+# docs/runtime/konstruktions_quote.md und aendert sich nur, wenn sich der Befund aendert.
+docs/runtime/konstruktions_quote_meta.json
+
+# Die gebaute oeffentliche Site — Erzeugnis aus public/, Sorte "Laufzeitzustand"
+# (§ Arbeitsbaum-Hygiene). Quelle und Waechter sind verfolgt, das Ergebnis nicht.
+site/
