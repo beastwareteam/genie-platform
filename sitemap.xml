@@ -2,194 +2,218 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/architektur/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/barrierefreiheit/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/browser/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/daten/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/eigenbau/</loc>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/einstellungen/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/handel/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/ki_transparenz/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/kommunikation/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/landkarte/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/leistung/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/lizenzen/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/medien_und_web/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/oberflaeche/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://beastwareteam.github.io/genie-platform/de/rechner/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/sicherheit/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/sprache_und_stimme/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/technologie/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/videos/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/advanced/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/commerce/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/compute/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/config/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/container/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/content/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/data/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/dataviz/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/datetime/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/diagram/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/display/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/enterprise/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/feedback/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/input/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/interaction/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/layout/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/media/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/navigation/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/overlay/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/social/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/status/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/system/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/de/typen/web/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/en/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/en/barrierefreiheit/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/en/daten/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/en/handel/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/news/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/news/2.965.0/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/news/2.975.0/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/news/2.981.0/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://beastwareteam.github.io/genie-platform/news/2.998.0/</loc>
-         <lastmod>2026-08-21</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
 </urlset>
