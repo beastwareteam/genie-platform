@@ -2422,8 +2422,10 @@ die vorliegt.</p>
 <p><em>Diese Tabelle ist nicht abgetippt. Sie wird bei jedem Bau aus dem Messbericht gelesen —
 eine Zahl, die sich ändert, ändert sich hier mit.</em></p>
 <p>Gemessen am 29. Juni 2026, ein örtlich laufendes Sprachmodell mit sieben Milliarden
-Parametern, zehn Anfragen. Alle zehn Energiewerte stammen aus einer <strong>Messung</strong>, keiner aus
-einer Schätzung.</p>
+Parametern, zehn Anfragen. Der Bericht nennt alle zehn Energiewerte „gemessen“ — <strong>zu
+Unrecht</strong>: das Werkzeug setzte diese Angabe damals ohne Prüfung, hielt die Quelle nicht fest
+und zog den Leerlauf nicht ab. Woher die zehn Werte stammen, ist deshalb <strong>unbekannt</strong>, und
+sie enthalten den Grundverbrauch des Rechners. Die Zeiten und Token-Zahlen betrifft das nicht.</p>
 <h2 id="was-diese-zahlen-bedeuten">Was diese Zahlen bedeuten<a class="headerlink" href="#was-diese-zahlen-bedeuten" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2466,10 +2468,11 @@ einer Schätzung.</p>
 <p>Die erste Zahl ist die, die man <strong>spürt</strong>. Die letzten drei sind die, über die sonst
 niemand spricht.</p>
 <h2 id="wie-die-zahl-entsteht">Wie die Zahl entsteht<a class="headerlink" href="#wie-die-zahl-entsteht" title="Permanent link">&para;</a></h2>
-<p><strong>Die Energie wird nicht geschätzt, sondern integriert.</strong> Die momentane Leistung wird
-während der Anfrage laufend abgelesen und über die Zeit aufsummiert. Vorher wird der
-Leerlauf des Rechners gemessen und <strong>abgezogen</strong> — was übrig bleibt, ist die zusätzliche
-Arbeit der Anfrage, nicht der Verbrauch des ganzen Geräts.</p>
+<p><strong>Die Energie wird integriert.</strong> Die momentane Leistung wird während der Anfrage laufend
+abgelesen und über die Zeit aufsummiert. Vor dem ersten Ziel eines Laufs wird der Leerlauf
+des Rechners bestimmt und <strong>abgezogen</strong> — was übrig bleibt, ist die zusätzliche Arbeit der
+Anfrage, nicht der Verbrauch des ganzen Geräts. Lässt sich der Leerlauf nicht bestimmen,
+steht im Bericht „nicht abgezogen“, und die Zahl ist brutto.</p>
 <p>Woher die Leistung kommt, hängt vom Rechner ab, und das wird auseinandergehalten:</p>
 <table>
 <thead>
@@ -2481,15 +2484,11 @@ Arbeit der Anfrage, nicht der Verbrauch des ganzen Geräts.</p>
 <tbody>
 <tr>
 <td>Grafikkarte von NVIDIA</td>
-<td>am Board <strong>gemessene</strong> Watt — die genaueste verfügbare Quelle</td>
+<td>am Board <strong>gemessene</strong> Watt — die einzige gemessene Quelle</td>
 </tr>
 <tr>
-<td>Prozessor unter Linux</td>
-<td>die eingebauten Energiezähler — ebenfalls gemessen</td>
-</tr>
-<tr>
-<td>Prozessor unter Windows</td>
-<td>Auslastung mal Leistungsaufnahme: ein <strong>Modell</strong>, etwa ±15 bis 20 Prozent</td>
+<td>Prozessor</td>
+<td>Auslastung mal angenommener Leistungsaufnahme: ein <strong>Modell</strong>, unter Windows wie unter Linux — die Energiezähler unter Linux sind nicht angebunden</td>
 </tr>
 <tr>
 <td>Grafikkarte von AMD oder Intel</td>
@@ -2497,8 +2496,12 @@ Arbeit der Anfrage, nicht der Verbrauch des ganzen Geräts.</p>
 </tr>
 </tbody>
 </table>
-<p>Ein Modellwert ist kein Messwert. Beides in eine Spalte zu schreiben, machte den Bericht
-vollständiger, als er ist — deshalb führt jede einzelne Messung mit, woher sie stammt.</p>
+<p>Wie gut ein Modellwert ist, hängt daran, wie gut die angenommene Leistungsaufnahme zum
+Rechner passt. Ein Modellwert ist kein Messwert. Beides in eine Spalte zu schreiben, machte
+den Bericht vollständiger, als er ist — deshalb führt jede einzelne Zahl mit, woher sie
+stammt. Ist auch nur ein Anteil modelliert, etwa der Prozessor neben einer NVIDIA-Karte,
+gilt die ganze Zahl als Modell. Jeder Bericht hält dazu die Quelle, den abgezogenen Leerlauf
+und den Rechner fest, auf dem er entstand.</p>
 <h2 id="warum-keine-zahl-allein-steht">Warum keine Zahl allein steht<a class="headerlink" href="#warum-keine-zahl-allein-steht" title="Permanent link">&para;</a></h2>
 <p>Drei Vorkehrungen, ohne die eine Leistungsangabe wertlos ist:</p>
 <ul>

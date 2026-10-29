@@ -6143,29 +6143,29 @@
 <tr>
 <td><a href="#table">table</a></td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">124</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">123</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td><a href="#data_grid">data_grid</a></td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">124</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">123</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td><a href="#comparison_table">comparison_table</a></td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">124</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">123</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td><a href="#pivot_table">pivot_table</a></td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">118</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">117</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr>
@@ -6188,16 +6188,16 @@
 <h2 id="die-funf-bausteine">Die fünf Bausteine<a class="headerlink" href="#die-funf-bausteine" title="Permanent link">&para;</a></h2>
 <h3 id="table">table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h3>
 <p>Tabellarische Datenansicht mit Sortierung und Filterung</p>
-<p>Stand: 9 zuschaltbar · 6 fest eingebaut · 124 noch offen. Steckbrief: <a href="../display/#table">Display</a>.</p>
+<p>Stand: 9 zuschaltbar · 7 fest eingebaut · 123 noch offen. Steckbrief: <a href="../display/#table">Display</a>.</p>
 <h3 id="data_grid">data_grid<a class="headerlink" href="#data_grid" title="Permanent link">&para;</a></h3>
 <p>Daten-Raster mit Spalten (Sortierung, Suche, Export)</p>
-<p>Stand: 9 zuschaltbar · 6 fest eingebaut · 124 noch offen. Steckbrief: <a href="../data/#data_grid">Data</a>.</p>
+<p>Stand: 9 zuschaltbar · 7 fest eingebaut · 123 noch offen. Steckbrief: <a href="../data/#data_grid">Data</a>.</p>
 <h3 id="comparison_table">comparison_table<a class="headerlink" href="#comparison_table" title="Permanent link">&para;</a></h3>
 <p>Vergleichstabelle mit Spalten (Suche, Sortierung, Export)</p>
-<p>Stand: 9 zuschaltbar · 6 fest eingebaut · 124 noch offen. Steckbrief: <a href="../data/#comparison_table">Data</a>.</p>
+<p>Stand: 9 zuschaltbar · 7 fest eingebaut · 123 noch offen. Steckbrief: <a href="../data/#comparison_table">Data</a>.</p>
 <h3 id="pivot_table">pivot_table<a class="headerlink" href="#pivot_table" title="Permanent link">&para;</a></h3>
 <p>Pivot-Tabelle: verdichtete Kreuztabelle aus Zeilen</p>
-<p>Stand: 9 zuschaltbar · 7 fest eingebaut · 118 noch offen · 5 nicht vorgesehen. Steckbrief: <a href="../data/#pivot_table">Data</a>.</p>
+<p>Stand: 9 zuschaltbar · 8 fest eingebaut · 117 noch offen · 5 nicht vorgesehen. Steckbrief: <a href="../data/#pivot_table">Data</a>.</p>
 <h3 id="tree">tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h3>
 <p>Hierarchische Baumansicht (auf-/zuklappbar)</p>
 <p>Stand: 0 zuschaltbar · 6 fest eingebaut · 133 noch offen. Steckbrief: <a href="../data/#tree">Data</a>.</p>
@@ -6283,7 +6283,7 @@
 <li><strong>Wahl:</strong> umbrechen / am Ende / in der Mitte / am Anfang kürzen; voller Text als Tooltip</li>
 <li><strong>Verbreitung:</strong> in 3 von 12 Quellen — häufig</li>
 <li><strong>Bei uns:</strong><ul>
-<li>zuschaltbar bei <code>table</code>, <code>data_grid</code>, <code>comparison_table</code>, <code>pivot_table</code> — Einstellung „Langen Text kürzen“ (ab Werk rechts)</li>
+<li>zuschaltbar bei <code>table</code>, <code>data_grid</code>, <code>comparison_table</code>, <code>pivot_table</code> — Einstellung „Langen Text kürzen“ (ab Werk Mitte)</li>
 <li>fest eingebaut bei <code>tree</code> (rechts)</li>
 </ul>
 </li>
@@ -6369,7 +6369,7 @@
 <li><strong>Wahl:</strong> feste Pixel / anteilig (Gewicht) / letzte füllt Rest / Mindest-/Höchstbreite</li>
 <li><strong>Verbreitung:</strong> in 5 von 12 Quellen — Kernfähigkeit</li>
 <li><strong>Bei uns:</strong><ul>
-<li>fest eingebaut bei <code>table</code>, <code>data_grid</code>, <code>comparison_table</code>, <code>pivot_table</code> (letzte Spalte füllt)</li>
+<li>fest eingebaut bei <code>table</code>, <code>data_grid</code>, <code>comparison_table</code>, <code>pivot_table</code> (Hauptspalte füllt den Rest)</li>
 <li>noch offen bei <code>tree</code> — Qt bringt sie mit, sie wird als Einstellung durchgereicht</li>
 </ul>
 </li>
@@ -6386,7 +6386,11 @@
 <ul>
 <li><strong>Wahl:</strong> aus / Spaltenauswahl mit Häkchen / über Kopfmenü; Hinweis „n Spalten ausgeblendet"</li>
 <li><strong>Verbreitung:</strong> in 5 von 12 Quellen — Kernfähigkeit</li>
-<li><strong>Bei uns:</strong> noch offen bei allen fünf — Qt bringt sie mit, sie wird als Einstellung durchgereicht</li>
+<li><strong>Bei uns:</strong><ul>
+<li>fest eingebaut bei <code>table</code>, <code>data_grid</code>, <code>comparison_table</code>, <code>pivot_table</code> (Spaltenauswahl mit Häkchen)</li>
+<li>noch offen bei <code>tree</code> — Qt bringt sie mit, sie wird als Einstellung durchgereicht</li>
+</ul>
+</li>
 </ul>
 <h3 id="spalten-fixieren">Spalten fixieren<a class="headerlink" href="#spalten-fixieren" title="Permanent link">&para;</a></h3>
 <p>Wichtige Spalten bleiben beim Seitwärtsrollen stehen.</p>
