@@ -6,7 +6,7 @@ icon: material/view-grid
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../bilder/kopf/bausteine.png">
-  <img src="../../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben einem gebauten Verlauf mit drei Stationen.">
+  <img src="../../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben Symbolen für Beschreibung, Suchen, Verzeichnis und Verwendung.">
 </picture>
 
 Die Plattform bringt **146 Bausteine** in **23 Familien** mit. Jeder davon lässt sich in einem Satz anfordern — die Konstruktion wählt den passenden aus.

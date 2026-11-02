@@ -5,7 +5,7 @@ icon: material/database
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/daten.png">
-  <img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben einem gebauten Balkendiagramm „Vorgänge je Monat“ mit vier Säulen.">
+  <img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben Symbolen für Tabelle, Diagramm, Rechnen und Bestand.">
 </picture>
 
 **31 Bausteine** für alles, was mit Datenbeständen zu tun hat: sie bedienbar machen, sie als

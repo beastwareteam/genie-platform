@@ -5,7 +5,7 @@ icon: material/view-dashboard
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/oberflaeche.png">
-  <img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben vier gebauten Kacheln mit den Bereichen Technik, Vertrieb, Betrieb und Qualität.">
+  <img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben Symbolen für Eingeben, Auswählen, Anzeigen und Ordnen.">
 </picture>
 
 Mit **62 Bausteinen** ist dies der größte Bereich der Plattform — alles, womit ein Mensch

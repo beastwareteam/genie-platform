@@ -5,7 +5,7 @@ icon: material/microphone
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/sprache_und_stimme.png">
-  <img src="../bilder/kopf/sprache_und_stimme_hell.png" alt="Bannerbild: die Überschrift „Sprache und Stimme“ neben einer gebauten Rückmeldung „Diktat übernommen“.">
+  <img src="../bilder/kopf/sprache_und_stimme_hell.png" alt="Bannerbild: die Überschrift „Sprache und Stimme“ neben Symbolen für Vorlesen, Diktat, Übersetzen und Stimmen.">
 </picture>
 
 Die Plattform kann zuhören und sprechen. Beides läuft, soweit es geht, auf Ihrem eigenen

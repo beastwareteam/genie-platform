@@ -7,7 +7,7 @@ icon: material/home
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/start.png">
-  <img src="../bilder/kopf/start_hell.png" alt="Banner image: the headline “Beschreiben Sie es. Es entsteht.” next to a generated form with the fields Name, Abteilung and Gültig ab.">
+  <img src="../bilder/kopf/start_hell.png" alt="Banner image: the headline “Beschreiben Sie es. Es entsteht.” (Describe it. It gets built.) next to icons for one sentence, it gets built, interface and use.">
 </picture>
 
 Genie AI Platform is a working environment that assembles itself while you use it. You say in one
@@ -59,7 +59,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/landkarte.png"><img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben einer gebauten Tabelle mit Bereichen und ihren Bausteinzahlen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/landkarte.png"><img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben Symbolen für Landkarte, 146 Bausteine, 23 Familien und Bereiche."></picture>
 
     What there is and where it belongs — 146 blocks in 23 families.
 
@@ -69,7 +69,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/bausteine.png"><img src="../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben einem gebauten Verlauf mit drei Stationen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/bausteine.png"><img src="../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben Symbolen für Beschreibung, Suchen, Verzeichnis und Verwendung."></picture>
 
     Every block described on its own — what it is, when to use it.
 
@@ -79,7 +79,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/oberflaeche.png"><img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben vier gebauten Kacheln mit den Bereichen Technik, Vertrieb, Betrieb und Qualität."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/oberflaeche.png"><img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben Symbolen für Eingeben, Auswählen, Anzeigen und Ordnen."></picture>
 
     Enter, choose, display, arrange — 62 blocks for the surface.
 
@@ -89,7 +89,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/daten.png"><img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben einem gebauten Balkendiagramm „Vorgänge je Monat“ mit vier Säulen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/daten.png"><img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben Symbolen für Tabelle, Diagramm, Rechnen und Bestand."></picture>
 
     Make data operable, understand it as a picture, calculate from it.
 
@@ -99,7 +99,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/medien_und_web.png"><img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben einer gebauten Liste „Was hier hineingeht“ mit vier Einträgen von Video bis PDF."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/medien_und_web.png"><img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben Symbolen für Video, Ton, Browser, Karten und PDF."></picture>
 
     Video and audio, the embedded browser, maps, PDF.
 
@@ -109,7 +109,7 @@ These figures are checked against the platform itself; they cannot go stale with
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/handel.png"><img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben einer gebauten Warenkorb-Übersicht mit Positionen und Endsumme."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/handel.png"><img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben Symbolen für Preis, Produkt, Warenkorb und Bewertung."></picture>
 
     Price, product, cart, rating — when commerce data belongs on screen.
 

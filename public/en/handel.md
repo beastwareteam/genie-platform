@@ -7,7 +7,7 @@ icon: material/cart
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/handel.png">
-  <img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben einer gebauten Warenkorb-Übersicht mit Positionen und Endsumme.">
+  <img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben Symbolen für Preis, Produkt, Warenkorb und Bewertung.">
 </picture>
 
 !!! info "Machine translation"

@@ -5,7 +5,7 @@ icon: material/shield-lock
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/sicherheit.png">
-  <img src="../bilder/kopf/sicherheit_hell.png" alt="Bannerbild: die Überschrift „Sicherheit“ neben einer gebauten Liste aus Schlüssel und Wert mit den drei Rechtestufen.">
+  <img src="../bilder/kopf/sicherheit_hell.png" alt="Bannerbild: die Überschrift „Sicherheit“ neben Symbolen für Schutzstufe, drei Rechtestufen, Dateiprüfung und abgeschirmte Ausführung.">
 </picture>
 
 Eine Plattform, die auf Zuruf Bedienflächen baut und dabei auch Anweisungen ausführen kann,

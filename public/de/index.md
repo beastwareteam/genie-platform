@@ -5,7 +5,7 @@ icon: material/home
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/start.png">
-  <img src="../bilder/kopf/start_hell.png" alt="Bannerbild: die Überschrift „Beschreiben Sie es. Es entsteht.“ neben einem gebauten Formular mit den Feldern Name, Abteilung und Gültig ab.">
+  <img src="../bilder/kopf/start_hell.png" alt="Bannerbild: die Überschrift „Beschreiben Sie es. Es entsteht.“ neben Symbolen für Ein Satz, Es entsteht, Fläche und Bedienen.">
 </picture>
 
 Genie AI Platform ist eine Arbeitsumgebung, die sich beim Benutzen selbst zusammenbaut. Sie
@@ -59,7 +59,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/landkarte.png"><img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben einer gebauten Tabelle mit Bereichen und ihren Bausteinzahlen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/landkarte.png"><img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben Symbolen für Landkarte, 146 Bausteine, 23 Familien und Bereiche."></picture>
 
     Was es gibt und wo es hingehört — 146 Bausteine in 23 Familien.
 
@@ -69,7 +69,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/bausteine.png"><img src="../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben einem gebauten Verlauf mit drei Stationen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/bausteine.png"><img src="../bilder/kopf/bausteine_hell.png" alt="Bannerbild: die Überschrift „Bausteine nachschlagen“ neben Symbolen für Beschreibung, Suchen, Verzeichnis und Verwendung."></picture>
 
     Jeder Baustein einzeln beschrieben — was er ist, wann man ihn nimmt.
 
@@ -79,7 +79,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/oberflaeche.png"><img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben vier gebauten Kacheln mit den Bereichen Technik, Vertrieb, Betrieb und Qualität."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/oberflaeche.png"><img src="../bilder/kopf/oberflaeche_hell.png" alt="Bannerbild: die Überschrift „Oberfläche“ neben Symbolen für Eingeben, Auswählen, Anzeigen und Ordnen."></picture>
 
     Eingeben, auswählen, anzeigen, ordnen — 62 Bausteine für die Fläche.
 
@@ -89,7 +89,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/daten.png"><img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben einem gebauten Balkendiagramm „Vorgänge je Monat“ mit vier Säulen."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/daten.png"><img src="../bilder/kopf/daten_hell.png" alt="Bannerbild: die Überschrift „Daten“ neben Symbolen für Tabelle, Diagramm, Rechnen und Bestand."></picture>
 
     Bestände bedienbar machen, als Bild verstehen, aus ihnen rechnen.
 
@@ -99,7 +99,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/medien_und_web.png"><img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben einer gebauten Liste „Was hier hineingeht“ mit vier Einträgen von Video bis PDF."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/medien_und_web.png"><img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben Symbolen für Video, Ton, Browser, Karten und PDF."></picture>
 
     Video und Ton, der eingebettete Browser, Karten, PDF.
 
@@ -109,7 +109,7 @@ dass es auffällt.
 
     ---
 
-    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/handel.png"><img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben einer gebauten Warenkorb-Übersicht mit Positionen und Endsumme."></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/handel.png"><img src="../bilder/kopf/handel_hell.png" alt="Bannerbild: die Überschrift „Handel“ neben Symbolen für Preis, Produkt, Warenkorb und Bewertung."></picture>
 
     Preis, Produkt, Warenkorb, Bewertung — wenn Handelsangaben ins Bild gehören.
 

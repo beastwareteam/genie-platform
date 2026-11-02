@@ -5,7 +5,7 @@ icon: material/email
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/kommunikation.png">
-  <img src="../bilder/kopf/kommunikation_hell.png" alt="Bannerbild: die Überschrift „Kommunikation“ neben einem gebauten Kommentarfaden mit zwei Beiträgen.">
+  <img src="../bilder/kopf/kommunikation_hell.png" alt="Bannerbild: die Überschrift „Kommunikation“ neben Symbolen für E-Mail, Kontakte, Beiträge und soziale Netze.">
 </picture>
 
 Die Plattform kann E-Mail-Postfächer, Kontakte und Beiträge aus sozialen Netzen in dieselbe

@@ -5,7 +5,7 @@ icon: material/map
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/landkarte.png">
-  <img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben einer gebauten Tabelle mit Bereichen und ihren Bausteinzahlen.">
+  <img src="../bilder/kopf/landkarte_hell.png" alt="Bannerbild: die Überschrift „Landkarte der Bausteine“ neben Symbolen für Landkarte, 146 Bausteine, 23 Familien und Bereiche.">
 </picture>
 
 Die Plattform bringt **146 Bausteine** in **23 Familien** mit. <!-- fakt: bausteine, familien -->

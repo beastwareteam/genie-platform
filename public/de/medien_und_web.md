@@ -5,7 +5,7 @@ icon: material/play-box
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../bilder/kopf/medien_und_web.png">
-  <img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben einer gebauten Liste „Was hier hineingeht“ mit vier Einträgen von Video bis PDF.">
+  <img src="../bilder/kopf/medien_und_web_hell.png" alt="Bannerbild: die Überschrift „Medien und Web“ neben Symbolen für Video, Ton, Browser, Karten und PDF.">
 </picture>
 
 Die Plattform bringt einen vollwertigen Browser, einen Medienspieler und eine
