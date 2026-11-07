@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/beastwareteam/genie-platform/discussions/2"><img src="public/bilder/startseite/grisu_beta.png" width="100%" alt="Grisu Closed Beta: Tester:innen gesucht. Kostenlos, Windows 64 Bit, mindestens drei Monate. Platz anfragen."></a>
+  <a href="https://grisu.beastware-labs.de/download/"><img src="public/bilder/startseite/grisu_beta.png" width="100%" alt="Grisu Closed Beta: Tester:innen gesucht. Kostenlos, Windows 64 Bit, mindestens drei Monate. Beta-Platz holen."></a>
 </p>
 
 # Genie AI Platform
@@ -59,9 +59,13 @@ Dazu: [Videos](public/de/videos.md) — jeweils auch vollständig als Text ·
 ## Ausprobieren
 
 Die Plattform gibt es derzeit als **Grisu Closed Beta**: kostenlos, für Windows 64 Bit,
-mindestens drei Monate lang. Was Sie erwartet, was die Beta von Ihnen erwartet und wie Sie
-einen Platz bekommen, steht in
-**[Discussion #2](https://github.com/beastwareteam/genie-platform/discussions/2)**.
+mindestens drei Monate lang.
+
+**[➜ Beta-Platz holen und herunterladen](https://grisu.beastware-labs.de/download/)** —
+Häkchen setzen, Knopf drücken: Download und persönlicher Teilnehmer-Link erscheinen sofort.
+Was Sie erwartet und was die Beta von Ihnen erwartet, steht auf
+**[grisu.beastware-labs.de](https://grisu.beastware-labs.de/)**; Fragen gern in
+[Discussion #2](https://github.com/beastwareteam/genie-platform/discussions/2).
 
 Danach genügt ein Satz im Chat-Fenster (<kbd>Strg</kbd>+<kbd>K</kbd>). <kbd>F1</kbd> öffnet die
 Hilfe, `/wiki` erklärt die Bedienung.
