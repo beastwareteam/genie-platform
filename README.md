@@ -65,7 +65,7 @@ mindestens drei Monate lang.
 Häkchen setzen, Knopf drücken: Download und persönlicher Teilnehmer-Link erscheinen sofort.
 Was Sie erwartet und was die Beta von Ihnen erwartet, steht auf
 **[grisu.beastware-labs.de](https://grisu.beastware-labs.de/)**; Fragen gern in
-[Discussion #2](https://github.com/beastwareteam/genie-platform/discussions/2).
+[Discussions](https://github.com/beastwareteam/genie-platform/discussions).
 
 Danach genügt ein Satz im Chat-Fenster (<kbd>Strg</kbd>+<kbd>K</kbd>). <kbd>F1</kbd> öffnet die
 Hilfe, `/wiki` erklärt die Bedienung.
